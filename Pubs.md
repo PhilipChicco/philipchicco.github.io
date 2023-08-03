@@ -1,5 +1,7 @@
 # Publications
-----------------
+---------------------------------------------------------
+## [Research](research.md) | [Contact](CV.md)
+---------------------------------------------------------
 ## Journals
 ----------------
 1. Kang, Myeongkyun, **Philip Chikontwe**, Donkyu Won, Miguel Luna, and Sang Hyun Park. *Structure-preserving image translation for multi-source medical image domain adaptation.* Pattern Recognition (2023).
