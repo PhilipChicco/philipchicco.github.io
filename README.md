@@ -1,4 +1,8 @@
-# Data Scientist
+# Philip Chikontwe
+---------------------------------------------------------
+#### About | Publications | CV | Contact
+---------------------------------------------------------
+
 
 #### Technical Skills: Python, SQL, AWS, Snowflake, MATLAB
 
