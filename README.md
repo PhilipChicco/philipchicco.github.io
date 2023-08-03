@@ -23,14 +23,17 @@
 ## Select Publications
 ----------------------
 
-> **[Revisiting Weak-to-Strong Consistency in Semi-Supervised Semantic Segmentation](https://arxiv.org/abs/2208.09910)**
-> Lihe Yang, Lei Qi, Litong Feng, Wayne Zhang, Yinghuan Shi
-> *In Conference on Computer Vision and Pattern Recognition (CVPR), 2023*
+> **[Weakly Supervised Segmentation on Neural Compressed Histopathology with Self-Equivariant Regularization.](https://arxiv.org/abs/2208.09910)**
+*Philip Chikontwe, Hyun Jung Sung, Jaehoon Jong, Meejeong Kim, Heoungjeong Go, Soo Jeong Nam, and Sang Hyun Park*
+**Medical Image Analysis, 2022.**
 
+> **[Uncertainty-aware semi-supervised few shot segmentation](https://arxiv.org/abs/2208.09910)**
+*Soopil Kim, Philip Chikontwe, Sion An and Sang Hyun Park*
+**Pattern Recognition, 2023.**
 
-> **[Revisiting Weak-to-Strong Consistency in Semi-Supervised Semantic Segmentation](https://arxiv.org/abs/2208.09910)**
-> *Lihe Yang, Lei Qi, Litong Feng, Wayne Zhang, Yinghuan Shi*
-**Conference on Computer Vision and Pattern Recognition (CVPR), 2023**
+> **[Dual Attention Multiple Instance Learning with Unsupervised Complementary Loss for COVID-19 Screening](https://arxiv.org/abs/2208.09910)**
+*Philip Chikontwe, Miguel Luna, Myeongkyun Kang, Kyung Soo Hong, June Hong Ahn, and Sang Hyun Park*
+**Medical Image Analysis, 2021.**
 
 
 
