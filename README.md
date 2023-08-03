@@ -12,6 +12,7 @@ I am currently a Research Fellow with the Department of Robotics Engineering, Me
 image analysis (classification, detection and segmentation ..), low-shot learning (few/semi/zero), and visual-language representation learning.
 
 ## Select Publications
+----------------------
 [scholar-profile](https://scholar.google.com/citations?user=8jHbkMcAAAAJ&hl=en)
 ----------------------
 > **[Uncertainty-aware semi-supervised few shot segmentation](https://www.sciencedirect.com/science/article/pii/S0031320322007713)**
