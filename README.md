@@ -1,6 +1,6 @@
 # Philip Chikontwe
 ---------------------------------------------------------
-### [About](about.md) | [Publications](Pubs.md) | [Research](research.md) | [CV](CV.md) | [Contact](CV.md)
+## [About](about.md) | [Publications](Pubs.md) | [Research](research.md) | [CV](CV.md) | [Contact](CV.md)
 ---------------------------------------------------------
 ## Education
 - Ph.D., Physics | The University of Texas at Dallas (_May 2022_)								       		
@@ -17,9 +17,17 @@
 - Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes
 
 ## Talks & Lectures
+----------------------
 - Causality: The new science of an old question - GSP Seminar, Fall 2021
 
 ## Select Publications
+----------------------
+<img src="/assets/img/cvpr2022.png" align="left" width="200px"/> <span style="color📗">**International Journal**</span> </br>  
+> **[Weakly Supervised Segmentation on Neural Compressed Histopathology with Self-Equivariant Regularization](https://arxiv.org/abs/2208.09910)**</br>
+> Philip Chikontwe, Hyun Jung Sung, Jaehoon Jong, Meejeong Kim, Heoungjeong Go, Soo Jeong Nam, and Sang Hyun Park</br>
+> *Medical Image Analysis, 2022*
+<br clear="left"/>
+|
 <img src="/assets/img/cvpr2022.png" align="left" width="200px"/> <span style="color📗">**International Conference**</span> </br>  
 > **[Revisiting Weak-to-Strong Consistency in Semi-Supervised Semantic Segmentation](https://arxiv.org/abs/2208.09910)**</br>
 > Lihe Yang, Lei Qi, Litong Feng, Wayne Zhang, Yinghuan Shi</br>
