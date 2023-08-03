@@ -1,6 +1,6 @@
 # Philip Chikontwe
 ---------------------------------------------------------
-#### About | Publications | CV | Contact
+#### [About](about.md) | Publications | CV | Contact
 ---------------------------------------------------------
 
 
