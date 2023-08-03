@@ -31,6 +31,7 @@
 
 <br clear="left"/>
 
+| <img src="/assets/img/cvpr2022.png" align="left" hiehgt= "100px" width="100px"/> | I am text to the right |
 
 <img src="/assets/img/cvpr2022.png" align="left" width="200px"/> <span style="color:red">**International Conference**</span> </br>  
 > **[Revisiting Weak-to-Strong Consistency in Semi-Supervised Semantic Segmentation](https://arxiv.org/abs/2208.09910)**</br>
