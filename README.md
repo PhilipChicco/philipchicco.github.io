@@ -23,19 +23,14 @@
 ## Select Publications
 ----------------------
 
-<img src="/assets/img/cvpr2022.png" align="left" width="200px"/> <span style="color:green">**International Journal**</span>  
-<p>**Weakly Supervised Segmentation on Neural Compressed Histopathology with Self-Equivariant Regularization**</p>
-<p>*Philip Chikontwe, Hyun Jung Sung, Jaehoon Jong, Meejeong Kim, Heoungjeong Go, Soo Jeong Nam, and Sang Hyun Park</p>
-<p>**Medical Image Analysis, 2022**</p>
-</br><span><a href="https://arxiv.org/abs/2208.09910">**[paper]**</a></span>
-
-<br clear="left"/>
-
-| <img src="/assets/img/cvpr2022.png" align="left" hiehgt= "100px" width="100px"/> | I am text to the right |
-
-<img src="/assets/img/cvpr2022.png" align="left" width="200px"/> <span style="color:red">**International Conference**</span> </br>  
-> **[Revisiting Weak-to-Strong Consistency in Semi-Supervised Semantic Segmentation](https://arxiv.org/abs/2208.09910)**</br>
-> Lihe Yang, Lei Qi, Litong Feng, Wayne Zhang, Yinghuan Shi</br>
+> **[Revisiting Weak-to-Strong Consistency in Semi-Supervised Semantic Segmentation](https://arxiv.org/abs/2208.09910)**
+> Lihe Yang, Lei Qi, Litong Feng, Wayne Zhang, Yinghuan Shi
 > *In Conference on Computer Vision and Pattern Recognition (CVPR), 2023*
-<br clear="left"/>
+
+
+> **[Revisiting Weak-to-Strong Consistency in Semi-Supervised Semantic Segmentation](https://arxiv.org/abs/2208.09910)**
+> *Lihe Yang, Lei Qi, Litong Feng, Wayne Zhang, Yinghuan Shi*
+> ==Conference on Computer Vision and Pattern Recognition (CVPR), 2023==
+
+
 
