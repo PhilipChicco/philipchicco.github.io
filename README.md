@@ -59,3 +59,6 @@ Used **Matlab** to train over 100 machine learning models which estimated partic
 > **[Revisiting Weak-to-Strong Consistency in Semi-Supervised Semantic Segmentation](https://arxiv.org/abs/2208.09910)**</br>
 > Lihe Yang, Lei Qi, Litong Feng, Wayne Zhang, Yinghuan Shi</br>
 > *In Conference on Computer Vision and Pattern Recognition (CVPR), 2023*
+
+|![alt](/assets/img/cvpr2022.png) | *In Conference on Computer Vision and Pattern Recognition (CVPR), 2023* |
+|-|-|
