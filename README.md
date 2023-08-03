@@ -30,7 +30,7 @@
 
 > **[Revisiting Weak-to-Strong Consistency in Semi-Supervised Semantic Segmentation](https://arxiv.org/abs/2208.09910)**
 > *Lihe Yang, Lei Qi, Litong Feng, Wayne Zhang, Yinghuan Shi*
-> ==Conference on Computer Vision and Pattern Recognition (CVPR), 2023==
+**Conference on Computer Vision and Pattern Recognition (CVPR), 2023**
 
 
 
