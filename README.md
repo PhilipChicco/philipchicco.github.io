@@ -24,12 +24,12 @@
 ----------------------
 
 <img src="/assets/img/cvpr2022.png" align="left" width="200px"/> <span style="color:green">**International Journal**</span>  
-<p>
-**Weakly Supervised Segmentation on Neural Compressed Histopathology with Self-Equivariant Regularization** </br> 
-Philip Chikontwe, Hyun Jung Sung, Jaehoon Jong, Meejeong Kim, Heoungjeong Go, Soo Jeong Nam, and Sang Hyun Park</br>
-**Medical Image Analysis, 2022**
-</p></br><span><a href="https://arxiv.org/abs/2208.09910">**[paper]**</a></span>
-<br clear="left"/></br></br>
+<p>**Weakly Supervised Segmentation on Neural Compressed Histopathology with Self-Equivariant Regularization**</p>
+<p>*Philip Chikontwe, Hyun Jung Sung, Jaehoon Jong, Meejeong Kim, Heoungjeong Go, Soo Jeong Nam, and Sang Hyun Park</p>
+<p>**Medical Image Analysis, 2022**</p>
+</br><span><a href="https://arxiv.org/abs/2208.09910">**[paper]**</a></span>
+
+<br clear="left"/>
 
 
 <img src="/assets/img/cvpr2022.png" align="left" width="200px"/> <span style="color:red">**International Conference**</span> </br>  
