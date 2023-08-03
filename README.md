@@ -2,10 +2,14 @@
 ---------------------------------------------------------
 ## [Publications](Pubs.md) | [Research](research.md) | [CV](CV.md) | [Contact](CV.md)
 ---------------------------------------------------------
-## About 
+## Biography 
 
-A PhD candidate and research assistant with an honors MS in computer science looking to further my knowledge of algorithmic design for vision systems tailored for medical image understanding. My career goal is to assume a role which allows me to take responsibility for the analysis and interpretation of medical data for a well-respected University. I am extremely passionate and quick to pick up novel concepts.
+I received the B.S. and M.S. degrees in computer science from Abdelhamid Mehri Constantine 2 University, El Khroub, Algeria, and Chonbuk National University, Jeonju,
+South Korea, in 2015 and 2018, respectively, and the Ph.D. degree in robotics and mechatronics engineering from the Daegu Gyeongbuk Institute of Science and Technology (DGIST), Daegu, South Korea,
+in 2023.
 
+I am currently a Research Fellow with the Department of Robotics Engineering, Medical Imaging and Signal Processing Laboratory, DGIST. My research interests include designing algorithms for medical
+image analysis (classification, detection and segmentation ..), low-shot learning (few/semi/zero), and visual-language representation learning.
 
 ## Select Publications
 ----------------------
