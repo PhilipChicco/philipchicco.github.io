@@ -10,3 +10,8 @@ I am interested in the enhancement of health care systems by developing computer
 > **Pathology Image Analysis**
 
 > **Visual-language representation learning**
+
+
+### Dissertation 
+---------------------------------------------------------
+> **Weakly Supervised Representation Learning for Histopathology Image Analysis**
