@@ -13,7 +13,9 @@ image analysis (classification, detection and segmentation ..), low-shot learnin
 
 ## Select Publications
 ----------------------
-[scholar-profile](https://scholar.google.com/citations?user=8jHbkMcAAAAJ&hl=en)
+
+[Google scholar](https://scholar.google.com/citations?user=8jHbkMcAAAAJ&hl=en)
+
 ----------------------
 > **[Uncertainty-aware semi-supervised few shot segmentation](https://www.sciencedirect.com/science/article/pii/S0031320322007713)**
 *Soopil Kim, Philip Chikontwe, Sion An and Sang Hyun Park*
