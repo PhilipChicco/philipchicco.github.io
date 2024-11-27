@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}" data-theme="light">
+<html lang="en-US" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-    {% seo %}
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Research | Philip Chikontwe</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Research" />
+<meta name="author" content="Philip Chikontwe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Research Fellow @ Yu Lab Harvard Medical School, Harvard University" />
+<meta property="og:description" content="Research Fellow @ Yu Lab Harvard Medical School, Harvard University" />
+<link rel="canonical" href="http://localhost:4000/research/" />
+<meta property="og:url" content="http://localhost:4000/research/" />
+<meta property="og:site_name" content="Philip Chikontwe" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Research" />
+<meta name="twitter:site" content="@philip_chicco" />
+<meta name="twitter:creator" content="@Philip Chikontwe" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Philip Chikontwe"},"description":"Research Fellow @ Yu Lab Harvard Medical School, Harvard University","headline":"Research","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/headshot.png"},"name":"Philip Chikontwe"},"url":"http://localhost:4000/research/"}</script>
+<!-- End Jekyll SEO tag -->
+
 </head>
 <body>
   <div class="progress-bar" id="scrollProgress"></div>
@@ -31,11 +50,11 @@
         <header class="site-header">
           <div class="header-background"></div> <!-- New background div -->
           <div class="profile-section">
-              {% if site.logo %}
-              <img src="{{ site.logo | relative_url }}" alt="Profile" class="profile-image">
-              {% endif %}
-              <h1 class="site-title">{{ site.title }}</h1>
-              <p class="site-description">{{ site.description }}</p>
+              
+              <img src="/assets/img/headshot.png" alt="Profile" class="profile-image">
+              
+              <h1 class="site-title">Philip Chikontwe</h1>
+              <p class="site-description">Research Fellow @ Yu Lab | Harvard Medical School, Harvard University</p>
           </div>
           
           <nav class="site-nav">
@@ -49,7 +68,43 @@
         </header>
 
         <main class="content">
-            {{ content }}
+            <div class="section research-intro">
+    <h2 class="gradient-text">Research Areas</h2>
+    <p>My research focuses on developing innovative algorithms for medical image analysis and machine learning, with particular emphasis in the following core areas:</p>
+</div>
+
+<div class="research-grid">
+    <div class="research-card">
+        <h3>Medical Image Analysis</h3>
+        <p>Developing advanced deep learning algorithms for medical image processing, segmentation, and classification. Current focus includes:</p>
+        <ul>
+            <li>Histopathology image analysis</li>
+            <li>Multi-modal medical image processing</li>
+            <li>Automated disease detection and classification</li>
+        </ul>
+    </div>
+
+    <div class="research-card">
+        <h3>Few-Shot Learning</h3>
+        <p>Innovation in learning from limited data samples through:</p>
+        <ul>
+            <li>Novel neural network architectures</li>
+            <li>Transfer learning strategies</li>
+            <li>Meta-learning approaches</li>
+        </ul>
+    </div>
+
+    <div class="research-card">
+        <h3>Visual-Language Representation</h3>
+        <p>Exploring the intersection of vision and language through:</p>
+        <ul>
+            <li>Multi-modal learning frameworks</li>
+            <li>Cross-modal representation learning</li>
+            <li>Image text retrieval</li>
+        </ul>
+    </div>
+</div>
+
         </main>
     </div>
 

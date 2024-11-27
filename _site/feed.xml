@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-11-26T19:44:31-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Philip Chikontwe</title><subtitle>Research Fellow @ Yu Lab | Harvard Medical School, Harvard University</subtitle><author><name>Philip Chikontwe</name></author><entry><title type="html">Paper Accepted at MICCAI 2024</title><link href="http://localhost:4000/news/2024/06/29/new_paper/" rel="alternate" type="text/html" title="Paper Accepted at MICCAI 2024" /><published>2024-06-29T00:00:00-04:00</published><updated>2024-06-29T00:00:00-04:00</updated><id>http://localhost:4000/news/2024/06/29/new_paper</id><content type="html" xml:base="http://localhost:4000/news/2024/06/29/new_paper/"><![CDATA[<div class="news-content reveal">
+    <h2 class="gradient-text">Paper Accepted at MICCAI 2024</h2>
+    <p>Our paper on "Low-Shot Prompting for WSI" has been accepted at MICCAI 2024. Thanks to all collaborators!</p>
+    
+    <!-- <div class="paper-highlight">
+        <h3>Low-Shot Prompting based Multiple Instance Learning</h3>
+        <p class="authors">Philip Chikontwe et al.</p>
+        <p class="venue">MICCAI, 2024</p>
+    </div> -->
+</div>]]></content><author><name>Philip Chikontwe</name></author><category term="news" /><summary type="html"><![CDATA[Paper Accepted at MICCAI 2024 Our paper on "Low-Shot Prompting for WSI" has been accepted at MICCAI 2024. Thanks to all collaborators!]]></summary></entry><entry><title type="html">Joined HMS Yu Lab</title><link href="http://localhost:4000/news/2024/05/02/lab-presentation/" rel="alternate" type="text/html" title="Joined HMS Yu Lab" /><published>2024-05-02T00:00:00-04:00</published><updated>2024-05-02T00:00:00-04:00</updated><id>http://localhost:4000/news/2024/05/02/lab-presentation</id><content type="html" xml:base="http://localhost:4000/news/2024/05/02/lab-presentation/"><![CDATA[<div class="news-content reveal">
+    <h2 class="gradient-text">Joined HMS Yu Lab</h2>
+    <p>Joined Yu Lab at Harvard Medical School. Exciting!</p>
+</div>]]></content><author><name>Philip Chikontwe</name></author><category term="news" /><summary type="html"><![CDATA[Joined HMS Yu Lab Joined Yu Lab at Harvard Medical School. Exciting!]]></summary></entry></feed>

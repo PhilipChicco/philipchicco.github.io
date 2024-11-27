@@ -1,5 +1,50 @@
-title: Home
+# Site Settings
+title: Philip Chikontwe
+description: Research Fellow @ Yu Lab | Harvard Medical School, Harvard University
 logo: /assets/img/headshot.png
-description: Post-doc Research Fellow @ DGIST.
-#show_downloads: true
-theme: jekyll-theme-minimal
+baseurl: ""
+url: "https://philipchicco.github.io"
+lang: en-US
+timezone: America/New_York
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+safe: true
+lsi: false
+
+# Plugin Settings
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# SEO Settings
+author: Philip Chikontwe
+twitter:
+  username: philip_chicco
+  card: summary_large_image
+social:
+  name: Philip Chikontwe
+  links:
+    - https://scholar.google.com/citations?user=8jHbkMcAAAAJ
+    - https://kr.linkedin.com/in/philip-chikontwe-52397a7a
+    - https://github.com/philipchicco
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /news/:year/:month/:day/:title/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .github
+  - README.md
+  - test.sh

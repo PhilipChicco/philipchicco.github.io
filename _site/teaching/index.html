@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}" data-theme="light">
+<html lang="en-US" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-    {% seo %}
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Teaching | Philip Chikontwe</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Teaching" />
+<meta name="author" content="Philip Chikontwe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Research Fellow @ Yu Lab Harvard Medical School, Harvard University" />
+<meta property="og:description" content="Research Fellow @ Yu Lab Harvard Medical School, Harvard University" />
+<link rel="canonical" href="http://localhost:4000/teaching/" />
+<meta property="og:url" content="http://localhost:4000/teaching/" />
+<meta property="og:site_name" content="Philip Chikontwe" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Teaching" />
+<meta name="twitter:site" content="@philip_chicco" />
+<meta name="twitter:creator" content="@Philip Chikontwe" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Philip Chikontwe"},"description":"Research Fellow @ Yu Lab Harvard Medical School, Harvard University","headline":"Teaching","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/headshot.png"},"name":"Philip Chikontwe"},"url":"http://localhost:4000/teaching/"}</script>
+<!-- End Jekyll SEO tag -->
+
 </head>
 <body>
   <div class="progress-bar" id="scrollProgress"></div>
@@ -31,11 +50,11 @@
         <header class="site-header">
           <div class="header-background"></div> <!-- New background div -->
           <div class="profile-section">
-              {% if site.logo %}
-              <img src="{{ site.logo | relative_url }}" alt="Profile" class="profile-image">
-              {% endif %}
-              <h1 class="site-title">{{ site.title }}</h1>
-              <p class="site-description">{{ site.description }}</p>
+              
+              <img src="/assets/img/headshot.png" alt="Profile" class="profile-image">
+              
+              <h1 class="site-title">Philip Chikontwe</h1>
+              <p class="site-description">Research Fellow @ Yu Lab | Harvard Medical School, Harvard University</p>
           </div>
           
           <nav class="site-nav">
@@ -49,7 +68,40 @@
         </header>
 
         <main class="content">
-            {{ content }}
+            <div class="teaching-container">
+    <div class="section teaching-intro">
+        <h2 class="gradient-text">Teaching &amp; Mentorship</h2>
+        <p>I am passionate about educating the next generation of researchers and practitioners in medical image analysis and machine learning.</p>
+    </div>
+
+    <div class="teaching-grid">
+        <!-- <div class="teaching-card">
+            <h3>Current Courses</h3>
+            <ul>
+                <li>Advanced Medical Image Analysis</li>
+                <li>Deep Learning in Healthcare</li>
+                <li>Machine Learning Fundamentals</li>
+            </ul>
+        </div> -->
+
+        <div class="teaching-card">
+            <h3>Student Supervision</h3>
+            <ul>
+                <li>Master's Students (1)</li>
+                <li>Undergraduate Research Intern (1)</li>
+            </ul>
+        </div>
+
+        <div class="teaching-card">
+            <h3>Workshops &amp; Tutorials</h3>
+            <ul>
+                <li>MICCAI 2024 Prime Workshop commitee member</li>
+                <li>MICCAI 2023 Prime Workshop Co-Chair</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
         </main>
     </div>
 
