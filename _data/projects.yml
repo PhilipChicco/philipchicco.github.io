@@ -1,0 +1,11 @@
+- title: "Medical Image Analysis"
+  description: "Research on developing computer vision and machine learning algorithms for healthcare applications."
+  image: "/assets/img/cvpr2022.png"
+  tags: ["Deep Learning", "Medical Imaging", "Computer Vision"]
+  url: "/projects/medical-image-analysis"
+
+- title: "Few-Shot Learning"
+  description: "Novel approaches for learning from limited data samples."
+  image: "/assets/img/cvpr2022.png"
+  tags: ["Machine Learning", "Few-Shot Learning", "Neural Networks"]
+  url: "/projects/few-shot-learning"

@@ -1,0 +1,52 @@
+featured:
+  - title: "Weakly Supervised Segmentation on Neural Compressed Histopathology with Self-Equivariant Regularization"
+    authors: "Philip Chikontwe, Hyun Jung Sung, Jaehoon Jong, Meejeong Kim, Heoungjeong Go, Soo Jeong Nam, and Sang Hyun Park"
+    venue: "Medical Image Analysis"
+    year: 2022
+    pdf: "#"
+
+all:
+  - title: "Structure-preserving image translation for multi-source medical image domain adaptation"
+    authors: "Kang, Myeongkyun, Philip Chikontwe, Donkyu Won, Miguel Luna, and Sang Hyun Park"
+    venue: "Pattern Recognition"
+    year: 2023
+    pdf: "https://www.sciencedirect.com/science/article/pii/YOUR_DOI"
+    doi: "https://doi.org/10.1016/YOUR_DOI"
+
+  - title: "Dual Attention Relation Network With Fine-Tuning for Few-Shot EEG Motor Imagery Classification"
+    authors: "An, Sion, Soopil Kim, Philip Chikontwe, and Sang Hyun Park"
+    venue: "IEEE Transactions on Neural Networks and Learning Systems"
+    year: 2023
+    pdf: "#"
+    doi: "https://doi.org/10.1109/YOUR_DOI"
+
+  - title: "Uncertainty-aware semi-supervised few shot segmentation"
+    authors: "Soopil Kim, Philip Chikontwe, Sion An and Sang Hyun Park"
+    venue: "Pattern Recognition"
+    year: 2023
+    pdf: "https://www.sciencedirect.com/science/article/pii/YOUR_DOI"
+    code: "https://github.com/username/repo"
+    doi: "https://doi.org/10.1016/YOUR_DOI"
+
+  - title: "Weakly Supervised Segmentation on Neural Compressed Histopathology with Self-Equivariant Regularization"
+    authors: "Philip Chikontwe, Hyun Jung Sung, Jaehoon Jong, Meejeong Kim, Heoungjeong Go, Soo Jeong Nam, and Sang Hyun Park"
+    venue: "Medical Image Analysis"
+    year: 2022
+    pdf: "https://www.sciencedirect.com/science/article/pii/YOUR_DOI"
+    code: "https://github.com/username/repo"
+    doi: "https://doi.org/10.1016/YOUR_DOI"
+
+  - title: "Transformation guided representation GAN for pose-invariant face recognition"
+    authors: "Philip Chikontwe, Yongbin Gao, and Hyo Jong Lee"
+    venue: "Multidimensional Systems and Signal Processing"
+    year: 2021
+    pdf: "#"
+    doi: "https://doi.org/10.1007/YOUR_DOI"
+
+  - title: "Dual Attention Multiple Instance Learning with Unsupervised Complementary Loss for COVID-19 Screening"
+    authors: "Philip Chikontwe, Miguel Luna, Myeongkyun Kang, Kyung Soo Hong, June Hong Ahn, and Sang Hyun Park"
+    venue: "Medical Image Analysis"
+    year: 2021
+    pdf: "https://www.sciencedirect.com/science/article/pii/YOUR_DOI"
+    code: "https://github.com/username/repo"
+    doi: "https://doi.org/10.1016/YOUR_DOI"
