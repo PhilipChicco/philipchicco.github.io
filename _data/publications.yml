@@ -1,4 +1,22 @@
 featured:
+  - title: "FR-MIL: Distribution Re-calibration based Multiple Instance Learning with Transformer for Whole Slide Image Classification"
+    authors: "Philip Chikontwe, Meejeong Kim, Jaehoon Jeong, Hyun Jung Sung, Heounjeong Go, Soo Jeong Nam, Sang Hyun Park"
+    venue: "IEEE Transactions on Medical Imaging"
+    year: 2024
+    pdf: "#"
+  
+  - title: "Low-Shot Prompt Tuning for Multiple Instance Learning Based Histology Classification"
+    authors: "Philip Chikontwe, Myeongkyun Kang, Miguel Luna, Siwoo Nam, Sang Hyun Park"
+    venue: "MICCAI"
+    year: 2024
+    pdf: "#"
+
+  - title: "Dual Attention Multiple Instance Learning with Unsupervised Complementary Loss for COVID-19 Screening"
+    authors: "Philip Chikontwe, Miguel Luna, Myeongkyun Kang, Kyung Soo Hong, June Hong Ahn, and Sang Hyun Park"
+    venue: "Medical Image Analysis"
+    year: 2021
+    pdf: "#"
+
   - title: "Weakly Supervised Segmentation on Neural Compressed Histopathology with Self-Equivariant Regularization"
     authors: "Philip Chikontwe, Hyun Jung Sung, Jaehoon Jong, Meejeong Kim, Heoungjeong Go, Soo Jeong Nam, and Sang Hyun Park"
     venue: "Medical Image Analysis"

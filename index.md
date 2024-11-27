@@ -24,6 +24,10 @@ title: Home
             <h3>Few-Shot Learning</h3>
             <p>Innovation in learning from limited data samples through novel neural network architectures.</p>
         </div>
+        <div class="highlight-card">
+            <h3>Visual-Language Representation</h3>
+            <p>Exploring the intersection of vision and language for medical image analysis.</p>
+        </div>
     </div>
 </div>
 

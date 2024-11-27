@@ -39,12 +39,12 @@
       };
   </script>
 
-    <div class="theme-switch-wrapper">
+    <!-- <div class="theme-switch-wrapper">
         <label class="theme-switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
             <div class="slider round"></div>
         </label>
-    </div>
+    </div> -->
 
     <div class="container">
         <header class="site-header">
@@ -68,7 +68,7 @@
         </header>
 
         <main class="content">
-            <div class="section research-intro">
+          <div class="section research-intro">
     <h2 class="gradient-text">Research Areas</h2>
     <p>My research focuses on developing innovative algorithms for medical image analysis and machine learning, with particular emphasis in the following core areas:</p>
 </div>
@@ -106,11 +106,17 @@
 </div>
 
         </main>
+
+        <footer class="site-footer">
+          <div class="footer-content">
+              <p>© 2024 Philip Chikontwe. Built with Jekyll.</p>
+          </div>
+        </footer>
     </div>
 
     <script>
 
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        <!-- const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
         
         function switchTheme(e) {
             if (e.target.checked) {
@@ -126,7 +132,7 @@
 
         const currentTheme = localStorage.getItem('theme') || 'light';
         document.documentElement.setAttribute('data-theme', currentTheme);
-        toggleSwitch.checked = currentTheme === 'dark';
+        toggleSwitch.checked = currentTheme === 'dark'; -->
     
       function reveal() {
           var reveals = document.querySelectorAll(".reveal");

@@ -7,7 +7,7 @@ permalink: /publications/
 <div class="section publications">
     <h2 class="gradient-text">Featured Publications</h2>
     <div class="publication-grid">
-        {% for pub in site.data.publications.featured limit:3 %}
+        {% for pub in site.data.publications.featured limit:4 %}
         <div class="publication-card featured">
             {% if pub.image %}
             <img src="{{ pub.image }}" alt="{{ pub.title }}" class="pub-image">
@@ -26,7 +26,7 @@ permalink: /publications/
 </div>
 
 <div class="section all-publications">
-    <h2 class="gradient-text">All Publications</h2>
+    <h2 class="gradient-text">Select Publications</h2>
     
     {% assign years = site.data.publications.all | map: "year" | uniq | sort | reverse %}
     

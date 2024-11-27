@@ -39,12 +39,12 @@
       };
   </script>
 
-    <div class="theme-switch-wrapper">
+    <!-- <div class="theme-switch-wrapper">
         <label class="theme-switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
             <div class="slider round"></div>
         </label>
-    </div>
+    </div> -->
 
     <div class="container">
         <header class="site-header">
@@ -68,9 +68,45 @@
         </header>
 
         <main class="content">
-            <div class="section publications">
+          <div class="section publications">
     <h2 class="gradient-text">Featured Publications</h2>
     <div class="publication-grid">
+        
+        <div class="publication-card featured">
+            
+            <div class="pub-content">
+                <h3>FR-MIL: Distribution Re-calibration based Multiple Instance Learning with Transformer for Whole Slide Image Classification</h3>
+                <p class="authors">Philip Chikontwe, Meejeong Kim, Jaehoon Jeong, Hyun Jung Sung, Heounjeong Go, Soo Jeong Nam, Sang Hyun Park</p>
+                <p class="venue"><strong>IEEE Transactions on Medical Imaging</strong>, 2024</p>
+                
+                <a href="#" class="pub-link" target="_blank">PDF</a>
+                
+            </div>
+        </div>
+        
+        <div class="publication-card featured">
+            
+            <div class="pub-content">
+                <h3>Low-Shot Prompt Tuning for Multiple Instance Learning Based Histology Classification</h3>
+                <p class="authors">Philip Chikontwe, Myeongkyun Kang, Miguel Luna, Siwoo Nam, Sang Hyun Park</p>
+                <p class="venue"><strong>MICCAI</strong>, 2024</p>
+                
+                <a href="#" class="pub-link" target="_blank">PDF</a>
+                
+            </div>
+        </div>
+        
+        <div class="publication-card featured">
+            
+            <div class="pub-content">
+                <h3>Dual Attention Multiple Instance Learning with Unsupervised Complementary Loss for COVID-19 Screening</h3>
+                <p class="authors">Philip Chikontwe, Miguel Luna, Myeongkyun Kang, Kyung Soo Hong, June Hong Ahn, and Sang Hyun Park</p>
+                <p class="venue"><strong>Medical Image Analysis</strong>, 2021</p>
+                
+                <a href="#" class="pub-link" target="_blank">PDF</a>
+                
+            </div>
+        </div>
         
         <div class="publication-card featured">
             
@@ -88,7 +124,7 @@
 </div>
 
 <div class="section all-publications">
-    <h2 class="gradient-text">All Publications</h2>
+    <h2 class="gradient-text">Select Publications</h2>
     
     
     
@@ -222,11 +258,17 @@
 </div>
 
         </main>
+
+        <footer class="site-footer">
+          <div class="footer-content">
+              <p>© 2024 Philip Chikontwe. Built with Jekyll.</p>
+          </div>
+        </footer>
     </div>
 
     <script>
 
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        <!-- const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
         
         function switchTheme(e) {
             if (e.target.checked) {
@@ -242,7 +284,7 @@
 
         const currentTheme = localStorage.getItem('theme') || 'light';
         document.documentElement.setAttribute('data-theme', currentTheme);
-        toggleSwitch.checked = currentTheme === 'dark';
+        toggleSwitch.checked = currentTheme === 'dark'; -->
     
       function reveal() {
           var reveals = document.querySelectorAll(".reveal");
