@@ -39,12 +39,12 @@
       };
   </script>
 
-    <div class="theme-switch-wrapper">
+    <!-- <div class="theme-switch-wrapper">
         <label class="theme-switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
             <div class="slider round"></div>
         </label>
-    </div>
+    </div> -->
 
     <div class="container">
         <header class="site-header">
@@ -68,7 +68,7 @@
         </header>
 
         <main class="content">
-            <div class="section intro reveal">
+          <div class="section intro reveal">
     <h2 class="gradient-text">Biography</h2>
 
     <p>I am a Research Fellow at the <a href="https://yu-lab.hms.harvard.edu/" target="_blank">Yu Lab</a>, Harvard Medical School and Harvard University, working with Prof. <a href="https://scholar.google.com/citations?user=8EWwnDQAAAAJ" target="_blank">Kun-Hsing Yu</a>. Previously, I worked at the Medical Imaging and Signal Processing Laboratory (<a href="https://sites.google.com/view/mispl/home" target="_blank">MISPL</a>), DGIST with Prof. <a href="https://scholar.google.com/citations?user=M9u8pFEAAAAJ" target="_blank">Sang Hyun Park</a>.</p>
@@ -89,6 +89,10 @@
             <h3>Few-Shot Learning</h3>
             <p>Innovation in learning from limited data samples through novel neural network architectures.</p>
         </div>
+        <div class="highlight-card">
+            <h3>Visual-Language Representation</h3>
+            <p>Exploring the intersection of vision and language for medical image analysis.</p>
+        </div>
     </div>
 </div>
 
@@ -96,17 +100,20 @@
     <h2 class="gradient-text">Latest News</h2>
     
     <div class="news-item">
+        <span class="news-date">July 01, 2024</span>
+        <h3>Paper published in IEEE TMI</h3>
+        <div class="news-content reveal">
+    <h2 class="gradient-text">Paper published in IEEE TMI</h2>
+</div>
+
+    </div>
+    
+    <div class="news-item">
         <span class="news-date">June 29, 2024</span>
         <h3>Paper Accepted at MICCAI 2024</h3>
         <div class="news-content reveal">
     <h2 class="gradient-text">Paper Accepted at MICCAI 2024</h2>
-    <p>Our paper on "Low-Shot Prompting for WSI" has been accepted at MICCAI 2024. Thanks to all collaborators!</p>
-    
-    <!-- <div class="paper-highlight">
-        <h3>Low-Shot Prompting based Multiple Instance Learning</h3>
-        <p class="authors">Philip Chikontwe et al.</p>
-        <p class="venue">MICCAI, 2024</p>
-    </div> -->
+    <!-- <p>Our paper on "Low-Shot Prompting for WSI" has been accepted at MICCAI 2024. Thanks to all collaborators!</p> -->
 </div>
 
     </div>
@@ -116,7 +123,7 @@
         <h3>Joined HMS Yu Lab</h3>
         <div class="news-content reveal">
     <h2 class="gradient-text">Joined HMS Yu Lab</h2>
-    <p>Joined Yu Lab at Harvard Medical School. Exciting!</p>
+    <!-- <p>Joined Yu Lab at Harvard Medical School. Exciting!</p> -->
 </div>
 
     </div>
@@ -124,11 +131,17 @@
 </div>
 
         </main>
+
+        <footer class="site-footer">
+          <div class="footer-content">
+              <p>© 2024 Philip Chikontwe. Built with Jekyll.</p>
+          </div>
+        </footer>
     </div>
 
     <script>
 
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        <!-- const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
         
         function switchTheme(e) {
             if (e.target.checked) {
@@ -144,7 +157,7 @@
 
         const currentTheme = localStorage.getItem('theme') || 'light';
         document.documentElement.setAttribute('data-theme', currentTheme);
-        toggleSwitch.checked = currentTheme === 'dark';
+        toggleSwitch.checked = currentTheme === 'dark'; -->
     
       function reveal() {
           var reveals = document.querySelectorAll(".reveal");

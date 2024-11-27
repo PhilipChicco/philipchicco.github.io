@@ -26,6 +26,32 @@ body {
   transition: background-color 0.3s ease;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Your existing mobile styles... */
+
+  /* Improved touch targets */
+  a, button {
+      min-height: 44px;
+      min-width: 44px;
+      padding: 12px;
+  }
+
+  .nav-link {
+      display: block;
+      padding: 15px;
+      border-bottom: 1px solid #eee;
+  }
+
+  .nav-link:last-child {
+      border-bottom: none;
+  }
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -843,4 +869,210 @@ input:checked + .slider:before {
   margin-top: 0.5rem;
   color: var(--text-color);
   font-style: italic;
+}
+
+/* Base Variables */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --bg-color: #ffffff;
+  --text-color: #2c3e50;
+  --border-color: #ecf0f1;
+  --header-bg: #f8f9fa;
+}
+
+/* Base Styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--text-color);
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+      padding: 0 15px;
+  }
+
+  .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+  }
+
+  .menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+  .nav-links {
+      display: none;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background: var(--bg-color);
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .site-header {
+      padding: 1rem;
+  }
+
+  .profile-image {
+      width: 120px;
+      height: 120px;
+  }
+
+  .site-title {
+      font-size: 1.8rem;
+  }
+
+  .site-description {
+      font-size: 1rem;
+  }
+
+  /* Publication Cards */
+  .publication-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+  }
+
+  /* Research Cards */
+  .research-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+  }
+
+  /* News Items */
+  .news-content {
+      padding: 1rem;
+  }
+
+  .paper-highlight {
+      padding: 1rem;
+  }
+
+  /* Contact Grid */
+  .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+  }
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .site-title {
+      font-size: 1.5rem;
+  }
+
+  .paper-links {
+      flex-direction: column;
+      gap: 0.5rem;
+  }
+
+  .publication-card {
+      padding: 1rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .menu-toggle,
+  .nav-links {
+      display: none;
+  }
+
+  .container {
+      width: 100%;
+      max-width: none;
+  }
+
+  body {
+      font-size: 12pt;
+  }
+}
+
+/* For tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+      padding: 0 30px;
+  }
+
+  .publication-grid,
+  .research-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+/* Footer Styles */
+.site-footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Update mobile styles for footer */
+@media (max-width: 768px) {
+  .site-footer {
+      margin-top: 2rem;
+      padding: 1.5rem 0;
+  }
+  
+  .footer-content {
+      padding: 0 1rem;
+  }
 }
