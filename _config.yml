@@ -7,6 +7,10 @@ url: "https://philipchicco.github.io"
 lang: en-US
 timezone: America/New_York
 
+# Google Analytics
+# Optional
+google_analytics: G-DYKEMKK790  # GA4 tracking ID
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
@@ -48,3 +52,4 @@ exclude:
   - .github
   - README.md
   - test.sh
+  - run.sh

@@ -3,68 +3,68 @@ featured:
     authors: "Philip Chikontwe, Meejeong Kim, Jaehoon Jeong, Hyun Jung Sung, Heounjeong Go, Soo Jeong Nam, Sang Hyun Park"
     venue: "IEEE Transactions on Medical Imaging"
     year: 2024
-    pdf: "#"
+    pdf: "https://ieeexplore.ieee.org/document/10640165"
   
   - title: "Low-Shot Prompt Tuning for Multiple Instance Learning Based Histology Classification"
     authors: "Philip Chikontwe, Myeongkyun Kang, Miguel Luna, Siwoo Nam, Sang Hyun Park"
     venue: "MICCAI"
     year: 2024
-    pdf: "#"
+    pdf: "https://link.springer.com/chapter/10.1007/978-3-031-16434-7_41"
 
   - title: "Dual Attention Multiple Instance Learning with Unsupervised Complementary Loss for COVID-19 Screening"
     authors: "Philip Chikontwe, Miguel Luna, Myeongkyun Kang, Kyung Soo Hong, June Hong Ahn, and Sang Hyun Park"
     venue: "Medical Image Analysis"
     year: 2021
-    pdf: "#"
+    pdf: "https://www.sciencedirect.com/science/article/pii/S1361841521001511"
 
   - title: "Weakly Supervised Segmentation on Neural Compressed Histopathology with Self-Equivariant Regularization"
     authors: "Philip Chikontwe, Hyun Jung Sung, Jaehoon Jong, Meejeong Kim, Heoungjeong Go, Soo Jeong Nam, and Sang Hyun Park"
     venue: "Medical Image Analysis"
     year: 2022
-    pdf: "#"
+    pdf: "https://www.sciencedirect.com/science/article/pii/S1361841522001293"
 
 all:
   - title: "Structure-preserving image translation for multi-source medical image domain adaptation"
     authors: "Kang, Myeongkyun, Philip Chikontwe, Donkyu Won, Miguel Luna, and Sang Hyun Park"
     venue: "Pattern Recognition"
     year: 2023
-    pdf: "https://www.sciencedirect.com/science/article/pii/YOUR_DOI"
-    doi: "https://doi.org/10.1016/YOUR_DOI"
+    #pdf: "https://www.sciencedirect.com/science/article/pii/YOUR_DOI"
+    #doi: "https://doi.org/10.1016/YOUR_DOI"
 
   - title: "Dual Attention Relation Network With Fine-Tuning for Few-Shot EEG Motor Imagery Classification"
     authors: "An, Sion, Soopil Kim, Philip Chikontwe, and Sang Hyun Park"
     venue: "IEEE Transactions on Neural Networks and Learning Systems"
     year: 2023
-    pdf: "#"
-    doi: "https://doi.org/10.1109/YOUR_DOI"
+    #pdf: "#"
+    #doi: "https://doi.org/10.1109/YOUR_DOI"
 
   - title: "Uncertainty-aware semi-supervised few shot segmentation"
     authors: "Soopil Kim, Philip Chikontwe, Sion An and Sang Hyun Park"
     venue: "Pattern Recognition"
     year: 2023
-    pdf: "https://www.sciencedirect.com/science/article/pii/YOUR_DOI"
-    code: "https://github.com/username/repo"
-    doi: "https://doi.org/10.1016/YOUR_DOI"
+    #pdf: "https://www.sciencedirect.com/science/article/pii/YOUR_DOI"
+    #code: "https://github.com/username/repo"
+    #doi: "https://doi.org/10.1016/YOUR_DOI"
 
   - title: "Weakly Supervised Segmentation on Neural Compressed Histopathology with Self-Equivariant Regularization"
     authors: "Philip Chikontwe, Hyun Jung Sung, Jaehoon Jong, Meejeong Kim, Heoungjeong Go, Soo Jeong Nam, and Sang Hyun Park"
     venue: "Medical Image Analysis"
     year: 2022
-    pdf: "https://www.sciencedirect.com/science/article/pii/YOUR_DOI"
-    code: "https://github.com/username/repo"
-    doi: "https://doi.org/10.1016/YOUR_DOI"
+    #pdf: "https://www.sciencedirect.com/science/article/pii/YOUR_DOI"
+    #code: "https://github.com/username/repo"
+    #doi: "https://doi.org/10.1016/YOUR_DOI"
 
   - title: "Transformation guided representation GAN for pose-invariant face recognition"
     authors: "Philip Chikontwe, Yongbin Gao, and Hyo Jong Lee"
     venue: "Multidimensional Systems and Signal Processing"
     year: 2021
-    pdf: "#"
-    doi: "https://doi.org/10.1007/YOUR_DOI"
+    #pdf: "#"
+    #doi: "https://doi.org/10.1007/YOUR_DOI"
 
   - title: "Dual Attention Multiple Instance Learning with Unsupervised Complementary Loss for COVID-19 Screening"
     authors: "Philip Chikontwe, Miguel Luna, Myeongkyun Kang, Kyung Soo Hong, June Hong Ahn, and Sang Hyun Park"
     venue: "Medical Image Analysis"
     year: 2021
-    pdf: "https://www.sciencedirect.com/science/article/pii/YOUR_DOI"
-    code: "https://github.com/username/repo"
-    doi: "https://doi.org/10.1016/YOUR_DOI"
+    #pdf: "https://www.sciencedirect.com/science/article/pii/YOUR_DOI"
+    #code: "https://github.com/username/repo"
+    #doi: "https://doi.org/10.1016/YOUR_DOI"
