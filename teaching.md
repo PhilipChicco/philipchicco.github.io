@@ -32,7 +32,7 @@ permalink: /teaching/
             <h3>Workshops & Tutorials</h3>
             <ul>
                 <li>MICCAI 2024 Prime Workshop commitee member</li>
-                <li>MICCAI 2023 Prime Workshop Co-Chair</li>
+                <li>MICCAI 2022 Prime Workshop Co-Chair</li>
             </ul>
         </div>
     </div>

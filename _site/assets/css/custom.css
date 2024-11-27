@@ -60,7 +60,18 @@ html {
 
 /* Header Styles */
 .site-header {
-  background-color: var(--header-bg);
+  position: relative;
+  width: 100%;
+  padding: 2rem 0;
+  background: linear-gradient(
+        rgba(255, 255, 255, 0.7), /* Adjust 0.9 to control background opacity */
+        rgba(255, 255, 255, 1.0)
+    ),
+    url('/assets/img/header-bg.webp');  /* Your image path */
+  background-size: cover;
+  background-position: center;
+
+  /*background-color: var(--header-bg);*/
   padding: 2rem 0;
   text-align: center;
   border-bottom: 1px solid var(--border-color);
@@ -360,6 +371,12 @@ input:checked + .slider:before {
 
 .nav-link {
   position: relative;
+}
+
+/* Default nav link size */
+.nav-link {
+  font-size: 1.1rem;  /* Increase base font size */
+  font-weight: 500;   /* Make it slightly bolder */
 }
 
 .nav-link::after {
@@ -719,7 +736,7 @@ input:checked + .slider:before {
 
 /* Enhanced Typography for Bio */
 .intro p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
 }
@@ -1066,13 +1083,66 @@ body {
 }
 
 /* Update mobile styles for footer */
+/* Mobile-specific styles - add or update these */
 @media (max-width: 768px) {
-  .site-footer {
-      margin-top: 2rem;
-      padding: 1.5rem 0;
+  /* Header Layout */
+  .site-header {
+      position: relative;
+      padding: 1rem;
   }
-  
-  .footer-content {
-      padding: 0 1rem;
+
+  .profile-section {
+      display: flex;
+      flex-direction: row;  /* Keep horizontal */
+      align-items: center;
+      gap: 1rem;
+      padding: 0;
+  }
+
+  .profile-image {
+      width: 80px;
+      height: 80px;
+      margin: 0;
+  }
+
+  /* Title and description */
+  .site-info {
+      text-align: left;
+      flex: 1;
+  }
+
+  .site-title {
+      font-size: 1.5rem;
+      margin: 0;
+  }
+
+  .site-description {
+      font-size: 0.9rem;
+      margin: 0.5rem 0;
+  }
+
+  /* Navigation */
+  .nav-links {
+      display: flex;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 0.5rem 0;
+      margin: 0;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;  /* Firefox */
+  }
+
+  .nav-links::-webkit-scrollbar {
+      display: none;  /* Chrome, Safari */
+  }
+
+  .nav-link {
+      flex: 0 0 auto;
+      padding: 0.5rem 1rem;
+      margin: 0 0.25rem;
+      /* updated */
+      font-size: 1rem;  /* Slightly smaller on mobile */
+      padding: 0.5rem 1rem;
   }
 }
+

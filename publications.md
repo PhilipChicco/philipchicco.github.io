@@ -26,8 +26,8 @@ permalink: /publications/
 </div>
 
 <div class="section all-publications">
-    <h2 class="gradient-text">Select Publications</h2>
-    
+    <h2 class="gradient-text">Select Publications </h2>
+    <h3><a href="https://scholar.google.com/citations?user=8jHbkMcAAAAJ" target="_blank">Google Scholar Profile</a></h3>
     {% assign years = site.data.publications.all | map: "year" | uniq | sort | reverse %}
     
     {% for year in years %}

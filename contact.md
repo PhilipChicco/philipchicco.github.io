@@ -14,7 +14,7 @@ permalink: /contact/
         <div class="contact-card">
             <div class="contact-icon">📍</div>
             <h3>Location</h3>
-            <p>Yu Lab, Harvard Medical School<br>Boston, MA 02115</p>
+            <p>Yu Lab, DBMI<br>Harvard Medical School<br>Boston, MA 02115</p>
         </div>
 
         <div class="contact-card">
