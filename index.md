@@ -35,7 +35,7 @@ title: Home
 
 <div class="section news">
     <h2 class="gradient-text">Latest News</h2>
-    {% for post in site.posts limit:3 %}
+    {% for post in site.posts limit:10 %}
     <div class="news-item">
         <span class="news-date">{{ post.date | date: "%B %d, %Y" }}</span>
         <h4>{{ post.title }}</h4>
