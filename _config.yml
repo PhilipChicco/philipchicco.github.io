@@ -11,13 +11,13 @@ timezone: America/New_York
 profile:
   role: Research Fellow
   lab: Yu Lab
-  lab_url: https://yu-lab.hms.harvard.edu/
+  lab_url: https://yulab.hms.harvard.edu/
   affiliation: Department of Biomedical Informatics, Harvard Medical School
   location: Boston, MA
   email: philip_chikontwe@hms.harvard.edu
   scholar: https://scholar.google.com/citations?user=8jHbkMcAAAAJ
   github: https://github.com/philipchicco
-  linkedin: https://kr.linkedin.com/in/philip-chikontwe-52397a7a
+  linkedin: https://www.linkedin.com/in/philip-chikontwe-ph-d-52397a7a/
   orcid: 0000-0002-6995-2312
   cv: /assets/files/resume.pdf
   # Last name as it appears in author lists; it is bolded in publications.
@@ -46,7 +46,7 @@ social:
   name: Philip Chikontwe
   links:
     - https://scholar.google.com/citations?user=8jHbkMcAAAAJ
-    - https://kr.linkedin.com/in/philip-chikontwe-52397a7a
+    - https://www.linkedin.com/in/philip-chikontwe-ph-d-52397a7a/
     - https://github.com/philipchicco
     - https://orcid.org/0000-0002-6995-2312
 
