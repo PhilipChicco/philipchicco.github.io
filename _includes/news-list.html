@@ -1,0 +1,28 @@
+{%- comment -%}
+  News from _data/news.yml plus every publication with a `news:` line, newest first.
+  Usage: {% include news-list.html limit=5 %}
+{%- endcomment -%}
+{%- assign pub_news = site.data.publications | where_exp: "p", "p.news" -%}
+{%- assign items = site.data.news | concat: pub_news | sort: "date" | reverse -%}
+{%- assign limit = include.limit | default: 1000 -%}
+<ul class="news-list">
+  {%- for item in items limit: limit %}
+  {%- if item.news -%}
+    {%- assign text = item.news -%}
+    {%- assign link = item.links.paper | default: item.links.pdf | default: item.links.arxiv -%}
+    {%- if item.highlight -%}{%- assign kind = "highlight" -%}{%- elsif item.type == "preprint" -%}{%- assign kind = "preprint" -%}{%- else -%}{%- assign kind = "paper" -%}{%- endif -%}
+  {%- else -%}
+    {%- assign text = item.text -%}
+    {%- assign link = item.link -%}
+    {%- assign kind = item.type | default: "news" -%}
+  {%- endif %}
+  <li class="news-item{% if kind == 'highlight' %} news-item--highlight{% endif %}">
+    <time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: "%b %Y" }}</time>
+    <div>
+      <span class="tag tag--{{ kind }}">{% if kind == "highlight" %}{% include icon.html name="star" %}{% endif %}{{ kind }}</span>
+      {{ text | markdownify | remove: "<p>" | remove: "</p>" | strip }}
+      {%- if link %} <a class="news-link" href="{{ link }}" target="_blank" rel="noopener">Read&nbsp;→</a>{% endif %}
+    </div>
+  </li>
+  {%- endfor %}
+</ul>

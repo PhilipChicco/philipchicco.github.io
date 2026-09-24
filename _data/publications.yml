@@ -1,70 +1,643 @@
-featured:
-  - title: "FR-MIL: Distribution Re-calibration based Multiple Instance Learning with Transformer for Whole Slide Image Classification"
-    authors: "Philip Chikontwe, Meejeong Kim, Jaehoon Jeong, Hyun Jung Sung, Heounjeong Go, Soo Jeong Nam, Sang Hyun Park"
-    venue: "IEEE Transactions on Medical Imaging"
-    year: 2024
-    pdf: "https://ieeexplore.ieee.org/document/10640165"
-  
-  - title: "Low-Shot Prompt Tuning for Multiple Instance Learning Based Histology Classification"
-    authors: "Philip Chikontwe, Myeongkyun Kang, Miguel Luna, Siwoo Nam, Sang Hyun Park"
-    venue: "MICCAI"
-    year: 2024
-    pdf: "https://link.springer.com/chapter/10.1007/978-3-031-16434-7_41"
+# Publications: the single source for the homepage, the Publications page and
+# the Research page. Newest first. Only "title", "authors", "venue" and "year"
+# are required; everything else is optional.
+#
+#   title:      Paper title
+#   authors:    [List, Of, Names]        # your name is bolded automatically
+#   venue:      Short label for the badge, e.g. "MICCAI 2024" or "IEEE TMI"
+#   venue_full: Full journal/conference name (shown in the citation line)
+#   year / date: Used for grouping and sorting
+#   type:       journal | conference | preprint   (drives the filter chips)
+#   doi:        10.xxxx/...              # used for the BibTeX entry
+#   links:      { paper: URL, pdf: URL, code: URL, project: URL, arxiv: URL }
+#   image:      /assets/img/pubs/<name>.png   # optional thumbnail (16:10 works best)
+#   selected:   true                     # show on the homepage
+#   topics:     [medical-imaging, few-shot, vision-language]   # links it to a Research area
+#   highlight:  "Nature Portfolio" / "Oral"   # optional badge; highlighted papers are featured on the homepage
+#   news:       "One-line announcement"  # optional: also posts it to News on "date"
+#
+# To add new papers automatically: python3 scripts/sync_publications.py
+# (also runs weekly on GitHub and opens a pull request for you to review).
 
-  - title: "Dual Attention Multiple Instance Learning with Unsupervised Complementary Loss for COVID-19 Screening"
-    authors: "Philip Chikontwe, Miguel Luna, Myeongkyun Kang, Kyung Soo Hong, June Hong Ahn, and Sang Hyun Park"
-    venue: "Medical Image Analysis"
-    year: 2021
-    pdf: "https://www.sciencedirect.com/science/article/pii/S1361841521001511"
+- title: "Biallelic loss of RB1 in hepatocellular carcinoma as synthetic lethal target for artificial intelligence-guided therapy"
+  authors: ["Jihyun An", "Wonkyung Kim", "Xiumei Zhang", "Philip Chikontwe", "Jin‐Sung Ju", "Bora Oh", "Ji‐Hye Oh", "Eun Ju Yang", "Hyun Namgung", "Dakeun Lee", "Yue Pu", "Lijie Chen", "Sang Hyun Park", "Joong Sup Shim", "Chang Ohk Sung", "Ju Hyun Shim"]
+  venue: "STTT"
+  venue_full: "Signal Transduction and Targeted Therapy"
+  year: 2026
+  date: 2026-08-20
+  type: journal
+  doi: "10.1038/s41392-026-02815-0"
+  links:
+    paper: "https://doi.org/10.1038/s41392-026-02815-0"
+  highlight: "Nature Portfolio"
+  news: "Our work on AI-guided therapy targeting biallelic RB1 loss in hepatocellular carcinoma is published in *Signal Transduction and Targeted Therapy* (Nature Portfolio)."
+  selected: true
+  topics: [medical-imaging]
+  openalex: W7203755007
 
-  - title: "Weakly Supervised Segmentation on Neural Compressed Histopathology with Self-Equivariant Regularization"
-    authors: "Philip Chikontwe, Hyun Jung Sung, Jaehoon Jong, Meejeong Kim, Heoungjeong Go, Soo Jeong Nam, and Sang Hyun Park"
-    venue: "Medical Image Analysis"
-    year: 2022
-    pdf: "https://www.sciencedirect.com/science/article/pii/S1361841522001293"
+- title: "FDIR: Harmonizing Fidelity and Human-Machine Preference in Lossy Compression Image Restoration"
+  authors: ["Kuan-Yen Chen", "Fang-Yi Su", "Philip Chikontwe", "Jung-Hsien Chiang"]
+  venue: "arXiv"
+  venue_full: "arXiv preprint"
+  year: 2026
+  date: 2026-07-31
+  type: preprint
+  doi: "10.48550/arxiv.2608.00111"
+  links:
+    paper: "https://doi.org/10.48550/arxiv.2608.00111"
+  news: "New preprint on arXiv: *FDIR*, harmonizing fidelity and human–machine preference in lossy compression image restoration."
+  selected: false
+  topics: []
+  openalex: W7172379321
 
-all:
-  - title: "Structure-preserving image translation for multi-source medical image domain adaptation"
-    authors: "Kang, Myeongkyun, Philip Chikontwe, Donkyu Won, Miguel Luna, and Sang Hyun Park"
-    venue: "Pattern Recognition"
-    year: 2023
-    #pdf: "https://www.sciencedirect.com/science/article/pii/YOUR_DOI"
-    #doi: "https://doi.org/10.1016/YOUR_DOI"
+- title: "Computational Pathology in the Era of Emerging Foundation and Agentic AI -- International Expert Perspectives on Clinical Integration and Translational Readiness"
+  authors: ["Qian Da", "Yijiang Chen", "Min Ho Ju", "Zheyi Ji", "Albert Zhou", "Wenwen Wang", "Matthew Alexander Abikenari", "Philip Chikontwe", "Guillaume Larghero", "Bowen Chen", "Peter Neidlinger", "Dingrong Zhong", "Shuhao Wang", "Wei Xu", "Drew Williamson", "Germán Corredor", "Sen Yang", "Le Lu", "Xiao Han", "Kun‐Hsing Yu", "Junzhou Huang", "Laura Barisoni", "Geert Litjens", "Anant Madabhushi", "Lifeng Zhu", "Chaofu Wang", "Junhan Zhao", "Weiguo Hu"]
+  venue: "arXiv"
+  venue_full: "arXiv preprint"
+  year: 2026
+  date: 2026-03-06
+  type: preprint
+  doi: "10.48550/arxiv.2603.05884"
+  links:
+    paper: "https://doi.org/10.48550/arxiv.2603.05884"
+  news: "New preprint on arXiv: international expert perspectives on computational pathology in the era of foundation and agentic AI."
+  selected: false
+  topics: [medical-imaging, vision-language]
+  openalex: W7134277491
 
-  - title: "Dual Attention Relation Network With Fine-Tuning for Few-Shot EEG Motor Imagery Classification"
-    authors: "An, Sion, Soopil Kim, Philip Chikontwe, and Sang Hyun Park"
-    venue: "IEEE Transactions on Neural Networks and Learning Systems"
-    year: 2023
-    #pdf: "#"
-    #doi: "https://doi.org/10.1109/YOUR_DOI"
+- title: "Subject-adaptive meta-learning for personalized BCI: A fusion of resting-state EEG signal and task-specific information"
+  authors: ["Sion An", "Myeongkyun Kang", "Soopil Kim", "Philip Chikontwe", "Li Shen", "Sang Hyun Park"]
+  venue: "Information Fusion"
+  venue_full: "Information Fusion"
+  year: 2025
+  date: 2025-07-17
+  type: journal
+  doi: "10.1016/j.inffus.2025.103501"
+  links:
+    paper: "https://doi.org/10.1016/j.inffus.2025.103501"
+  news: "Paper on subject-adaptive meta-learning for personalized BCI published in *Information Fusion*."
+  selected: false
+  topics: [few-shot]
+  openalex: W4412868668
 
-  - title: "Uncertainty-aware semi-supervised few shot segmentation"
-    authors: "Soopil Kim, Philip Chikontwe, Sion An and Sang Hyun Park"
-    venue: "Pattern Recognition"
-    year: 2023
-    #pdf: "https://www.sciencedirect.com/science/article/pii/YOUR_DOI"
-    #code: "https://github.com/username/repo"
-    #doi: "https://doi.org/10.1016/YOUR_DOI"
+- title: "Efficient one-shot federated learning on medical data using knowledge distillation with image synthesis and client model adaptation"
+  authors: ["Myeongkyun Kang", "Philip Chikontwe", "Soopil Kim", "Kyong Hwan Jin", "Ehsan Adeli", "Kilian M. Pohl", "Sang Hyun Park"]
+  venue: "MedIA"
+  venue_full: "Medical Image Analysis"
+  year: 2025
+  date: 2025-07-15
+  type: journal
+  doi: "10.1016/j.media.2025.103714"
+  links:
+    paper: "https://doi.org/10.1016/j.media.2025.103714"
+  news: "Paper on efficient one-shot federated learning for medical data published in *Medical Image Analysis*."
+  selected: true
+  topics: [medical-imaging]
+  openalex: W4412433735
 
-  - title: "Weakly Supervised Segmentation on Neural Compressed Histopathology with Self-Equivariant Regularization"
-    authors: "Philip Chikontwe, Hyun Jung Sung, Jaehoon Jong, Meejeong Kim, Heoungjeong Go, Soo Jeong Nam, and Sang Hyun Park"
-    venue: "Medical Image Analysis"
-    year: 2022
-    #pdf: "https://www.sciencedirect.com/science/article/pii/YOUR_DOI"
-    #code: "https://github.com/username/repo"
-    #doi: "https://doi.org/10.1016/YOUR_DOI"
+- title: "Communication Efficient Federated Learning for Multi-Organ Segmentation via Knowledge Distillation With Image Synthesis"
+  authors: ["Soopil Kim", "Heejung Park", "Philip Chikontwe", "Myeongkyun Kang", "Kyong Hwan Jin", "Ehsan Adeli", "Kilian M. Pohl", "Sang Hyun Park"]
+  venue: "IEEE TMI"
+  venue_full: "IEEE Transactions on Medical Imaging"
+  year: 2025
+  date: 2025-01-06
+  type: journal
+  doi: "10.1109/tmi.2025.3525581"
+  links:
+    paper: "https://doi.org/10.1109/tmi.2025.3525581"
+  news: "Paper on communication-efficient federated learning for multi-organ segmentation published in *IEEE Transactions on Medical Imaging*."
+  selected: false
+  topics: [medical-imaging]
+  openalex: W4406089787
 
-  - title: "Transformation guided representation GAN for pose-invariant face recognition"
-    authors: "Philip Chikontwe, Yongbin Gao, and Hyo Jong Lee"
-    venue: "Multidimensional Systems and Signal Processing"
-    year: 2021
-    #pdf: "#"
-    #doi: "https://doi.org/10.1007/YOUR_DOI"
+- title: "Context-Guided Medical Visual Question Answering"
+  authors: ["Wafa Arsalane", "Philip Chikontwe", "Miguel A. Cabra de Luna", "Myeongkyun Kang", "Sang Hyun Park"]
+  venue: "EMERGE @ MICCAI 2024"
+  venue_full: "Workshop on Empowering Medical Image Computing and Research through Early-Career Expertise"
+  year: 2025
+  date: 2025-01-01
+  type: conference
+  doi: "10.1007/978-3-031-79103-1_25"
+  links:
+    paper: "https://doi.org/10.1007/978-3-031-79103-1_25"
+  selected: false
+  topics: [medical-imaging, vision-language]
+  openalex: W4407269601
 
-  - title: "Dual Attention Multiple Instance Learning with Unsupervised Complementary Loss for COVID-19 Screening"
-    authors: "Philip Chikontwe, Miguel Luna, Myeongkyun Kang, Kyung Soo Hong, June Hong Ahn, and Sang Hyun Park"
-    venue: "Medical Image Analysis"
-    year: 2021
-    #pdf: "https://www.sciencedirect.com/science/article/pii/YOUR_DOI"
-    #code: "https://github.com/username/repo"
-    #doi: "https://doi.org/10.1016/YOUR_DOI"
+- title: "FR-MIL: Distribution Re-Calibration-Based Multiple Instance Learning With Transformer for Whole Slide Image Classification"
+  authors: ["Philip Chikontwe", "Meejeong Kim", "Jaehoon Jeong", "Hyun Jung Sung", "Heounjeong Go", "Soo Jeong Nam", "Sang Hyun Park"]
+  venue: "IEEE TMI"
+  venue_full: "IEEE Transactions on Medical Imaging"
+  year: 2024
+  date: 2024-08-20
+  type: journal
+  doi: "10.1109/tmi.2024.3446716"
+  links:
+    paper: "https://doi.org/10.1109/tmi.2024.3446716"
+  selected: true
+  topics: [medical-imaging]
+  openalex: W4401728026
+
+- title: "Few-shot anomaly detection using positive unlabeled learning with cycle consistency and co-occurrence features"
+  authors: ["Sion An", "Jaehong Kim", "Soopil Kim", "Philip Chikontwe", "Jiwook Jung", "H. B. Jeon", "Sang Hyun Park"]
+  venue: "ESWA"
+  venue_full: "Expert Systems with Applications"
+  year: 2024
+  date: 2024-07-27
+  type: journal
+  doi: "10.1016/j.eswa.2024.124890"
+  links:
+    paper: "https://doi.org/10.1016/j.eswa.2024.124890"
+  selected: false
+  topics: [few-shot]
+  openalex: W4401047038
+
+- title: "Video domain adaptation for semantic segmentation using perceptual consistency matching"
+  authors: ["Ihsan Ullah", "Sion An", "Myeongkyun Kang", "Philip Chikontwe", "Hyunki Lee", "Jinwoo Choi", "Sang Hyun Park"]
+  venue: "Neural Networks"
+  venue_full: "Neural Networks"
+  year: 2024
+  date: 2024-07-03
+  type: journal
+  doi: "10.1016/j.neunet.2024.106505"
+  links:
+    paper: "https://doi.org/10.1016/j.neunet.2024.106505"
+  selected: false
+  topics: []
+  openalex: W4400270634
+
+- title: "Few Shot Part Segmentation Reveals Compositional Logic for Industrial Anomaly Detection"
+  authors: ["Soopil Kim", "Sion An", "Philip Chikontwe", "Myeongkyun Kang", "Ehsan Adeli", "Kilian M. Pohl", "Sang Hyun Park"]
+  venue: "AAAI"
+  venue_full: "Proceedings of the AAAI Conference on Artificial Intelligence"
+  year: 2024
+  date: 2024-03-24
+  type: conference
+  doi: "10.1609/aaai.v38i8.28703"
+  links:
+    paper: "https://doi.org/10.1609/aaai.v38i8.28703"
+  selected: false
+  topics: [few-shot]
+  openalex: W4393154102
+
+- title: "Enhanced Nuclei Segmentation and Classification via Category Descriptors in the SAM Model"
+  authors: ["Miguel A. Cabra de Luna", "Philip Chikontwe", "Sang Hyun Park"]
+  venue: "Bioengineering"
+  venue_full: "Bioengineering"
+  year: 2024
+  date: 2024-03-21
+  type: journal
+  doi: "10.3390/bioengineering11030294"
+  links:
+    paper: "https://doi.org/10.3390/bioengineering11030294"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W4393039195
+
+- title: "Attention guided multi-scale cluster refinement with extended field of view for amodal nuclei segmentation"
+  authors: ["Miguel A. Cabra de Luna", "Philip Chikontwe", "Siwoo Nam", "Sang Hyun Park"]
+  venue: "CIBM"
+  venue_full: "Computers in Biology and Medicine"
+  year: 2024
+  date: 2024-01-20
+  type: journal
+  doi: "10.1016/j.compbiomed.2024.108015"
+  links:
+    paper: "https://doi.org/10.1016/j.compbiomed.2024.108015"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W4391050333
+
+- title: "Subject-Adaptive Transfer Learning Using Resting State EEG Signals for Cross-Subject EEG Motor Imagery Classification"
+  authors: ["Sion An", "Myeongkyun Kang", "Soopil Kim", "Philip Chikontwe", "Li Shen", "Sang Hyun Park"]
+  venue: "MICCAI 2024"
+  venue_full: "International Conference on Medical Image Computing and Computer-Assisted Intervention"
+  year: 2024
+  date: 2024-01-01
+  type: conference
+  doi: "10.1007/978-3-031-72120-5_63"
+  links:
+    paper: "https://doi.org/10.1007/978-3-031-72120-5_63"
+  selected: false
+  topics: []
+  openalex: W4403049238
+
+- title: "InstaSAM: Instance-Aware Segment Any Nuclei Model with Point Annotations"
+  authors: ["Siwoo Nam", "Ho Namgung", "Jaehoon Jeong", "Miguel A. Cabra de Luna", "Soopil Kim", "Philip Chikontwe", "Sang Hyun Park"]
+  venue: "MICCAI 2024"
+  venue_full: "International Conference on Medical Image Computing and Computer-Assisted Intervention"
+  year: 2024
+  date: 2024-01-01
+  type: conference
+  doi: "10.1007/978-3-031-72083-3_22"
+  links:
+    paper: "https://doi.org/10.1007/978-3-031-72083-3_22"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W4403365581
+
+- title: "Low-Shot Prompt Tuning for Multiple Instance Learning Based Histology Classification"
+  authors: ["Philip Chikontwe", "Myeongkyun Kang", "Miguel A. Cabra de Luna", "Siwoo Nam", "Sang Hyun Park"]
+  venue: "MICCAI 2024"
+  venue_full: "International Conference on Medical Image Computing and Computer-Assisted Intervention"
+  year: 2024
+  date: 2024-01-01
+  type: conference
+  doi: "10.1007/978-3-031-72083-3_27"
+  links:
+    paper: "https://doi.org/10.1007/978-3-031-72083-3_27"
+  selected: true
+  topics: [medical-imaging, few-shot, vision-language]
+  openalex: W4403365592
+
+- title: "Deep Learning for Microsatellite Instability Prediction in Colorectal Cancer: Impact of Clinicopathologic Variables on Model Performance"
+  authors: ["Meejeong Kim", "Philip Chikontwe", "Heounjeong Go", "Jae Hoon Jeong", "Su‐Jin Shin", "Sang Hyun Park", "Soo Jeong Nam"]
+  venue: "Research Square"
+  venue_full: "Research Square"
+  year: 2023
+  date: 2023-12-02
+  type: preprint
+  doi: "10.21203/rs.3.rs-3666337/v1"
+  links:
+    paper: "https://doi.org/10.21203/rs.3.rs-3666337/v1"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W4389257784
+
+- title: "Content preserving image translation with texture co-occurrence and spatial self-similarity for texture debiasing and domain adaptation"
+  authors: ["Myeongkyun Kang", "Dongkyu Won", "Miguel A. Cabra de Luna", "Philip Chikontwe", "Kyung Soo Hong", "June Hong Ahn", "Sang Hyun Park"]
+  venue: "Neural Networks"
+  venue_full: "Neural Networks"
+  year: 2023
+  date: 2023-08-03
+  type: journal
+  doi: "10.1016/j.neunet.2023.07.049"
+  links:
+    paper: "https://doi.org/10.1016/j.neunet.2023.07.049"
+  selected: false
+  topics: []
+  openalex: W4385515484
+
+- title: "Structure-preserving image translation for multi-source medical image domain adaptation"
+  authors: ["Myeongkyun Kang", "Philip Chikontwe", "Dongkyu Won", "Miguel A. Cabra de Luna", "Sang Hyun Park"]
+  venue: "Pattern Recognition"
+  venue_full: "Pattern Recognition"
+  year: 2023
+  date: 2023-07-28
+  type: journal
+  doi: "10.1016/j.patcog.2023.109840"
+  links:
+    paper: "https://doi.org/10.1016/j.patcog.2023.109840"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W4385337015
+
+- title: "Dual Attention Relation Network With Fine-Tuning for Few-Shot EEG Motor Imagery Classification"
+  authors: ["Sion An", "Soopil Kim", "Philip Chikontwe", "Sang Hyun Park"]
+  venue: "IEEE TNNLS"
+  venue_full: "IEEE Transactions on Neural Networks and Learning Systems"
+  year: 2023
+  date: 2023-06-28
+  type: journal
+  doi: "10.1109/tnnls.2023.3287181"
+  links:
+    paper: "https://doi.org/10.1109/tnnls.2023.3287181"
+  selected: false
+  topics: [few-shot]
+  openalex: W4382371186
+
+- title: "Uncertainty-aware semi-supervised few shot segmentation"
+  authors: ["Soopil Kim", "Philip Chikontwe", "Sion An", "Sang Hyun Park"]
+  venue: "Pattern Recognition"
+  venue_full: "Pattern Recognition"
+  year: 2023
+  date: 2023-01-02
+  type: journal
+  doi: "10.1016/j.patcog.2022.109292"
+  links:
+    paper: "https://doi.org/10.1016/j.patcog.2022.109292"
+  selected: false
+  topics: [few-shot]
+  openalex: W4313478851
+
+- title: "One-Shot Federated Learning on Medical Data Using Knowledge Distillation with Image Synthesis and Client Model Adaptation"
+  authors: ["Myeongkyun Kang", "Philip Chikontwe", "Soopil Kim", "Kyong Hwan Jin", "Ehsan Adeli", "Kilian M. Pohl", "Sang Hyun Park"]
+  venue: "MICCAI 2023"
+  venue_full: "International Conference on Medical Image Computing and Computer-Assisted Intervention"
+  year: 2023
+  date: 2023-01-01
+  type: conference
+  doi: "10.1007/978-3-031-43895-0_49"
+  links:
+    paper: "https://doi.org/10.1007/978-3-031-43895-0_49"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W4387211019
+
+- title: "PROnet: Point Refinement Using Shape-Guided Offset Map for Nuclei Instance Segmentation"
+  authors: ["Siwoo Nam", "Jaehoon Jeong", "Miguel A. Cabra de Luna", "Philip Chikontwe", "Sang Hyun Park"]
+  venue: "MICCAI 2023"
+  venue_full: "International Conference on Medical Image Computing and Computer-Assisted Intervention"
+  year: 2023
+  date: 2023-01-01
+  type: conference
+  doi: "10.1007/978-3-031-43907-0_51"
+  links:
+    paper: "https://doi.org/10.1007/978-3-031-43907-0_51"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W4387211535
+
+- title: "CAD: Co-Adapting Discriminative Features for Improved Few-Shot Classification"
+  authors: ["Philip Chikontwe", "Soopil Kim", "Sang Hyun Park"]
+  venue: "CVPR 2022"
+  venue_full: "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+  year: 2022
+  date: 2022-06-01
+  type: conference
+  doi: "10.1109/cvpr52688.2022.01415"
+  links:
+    paper: "https://doi.org/10.1109/cvpr52688.2022.01415"
+  selected: true
+  topics: [few-shot]
+  openalex: W4312493270
+
+- title: "Weakly supervised segmentation on neural compressed histopathology with self-equivariant regularization"
+  authors: ["Philip Chikontwe", "Hyun Jung Sung", "Jaehoon Jeong", "Meejeong Kim", "Heounjeong Go", "Soo Jeong Nam", "Sang Hyun Park"]
+  venue: "MedIA"
+  venue_full: "Medical Image Analysis"
+  year: 2022
+  date: 2022-05-25
+  type: journal
+  doi: "10.1016/j.media.2022.102482"
+  links:
+    paper: "https://doi.org/10.1016/j.media.2022.102482"
+  selected: true
+  topics: [medical-imaging]
+  openalex: W4281477828
+
+- title: "Feature Re-calibration Based Multiple Instance Learning for Whole Slide Image Classification"
+  authors: ["Philip Chikontwe", "Soo Jeong Nam", "Heounjeong Go", "Meejeong Kim", "Hyun Jung Sung", "Sang Hyun Park"]
+  venue: "MICCAI 2022"
+  venue_full: "International Conference on Medical Image Computing and Computer-Assisted Intervention"
+  year: 2022
+  date: 2022-01-01
+  type: conference
+  doi: "10.1007/978-3-031-16434-7_41"
+  links:
+    paper: "https://doi.org/10.1007/978-3-031-16434-7_41"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W4295917821
+
+- title: "Weakly-Supervised TILs Segmentation Based on Point Annotations Using Transfer Learning with Point Detector and Projected-Boundary Regressor"
+  authors: ["Siwoo Nam", "Myeongkyun Knag", "Dongkyu Won", "Philip Chikontwe", "Byeong‐Joo Noh", "Heounjeong Go", "Sang Hyun Park"]
+  venue: "PRIME 2022"
+  venue_full: "International Workshop on PRedictive Intelligence In MEdicine"
+  year: 2022
+  date: 2022-01-01
+  type: conference
+  doi: "10.1007/978-3-031-16919-9_11"
+  links:
+    paper: "https://doi.org/10.1007/978-3-031-16919-9_11"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W4296425471
+
+- title: "Dual attention multiple instance learning with unsupervised complementary loss for COVID-19 screening"
+  authors: ["Philip Chikontwe", "Miguel A. Cabra de Luna", "Myeongkyun Kang", "Kyung Soo Hong", "June Hong Ahn", "Sang Hyun Park"]
+  venue: "MedIA"
+  venue_full: "Medical Image Analysis"
+  year: 2021
+  date: 2021-05-24
+  type: journal
+  doi: "10.1016/j.media.2021.102105"
+  links:
+    paper: "https://doi.org/10.1016/j.media.2021.102105"
+  selected: true
+  topics: [medical-imaging]
+  openalex: W3165804767
+
+- title: "Bidirectional RNN-based Few Shot Learning for 3D Medical Image Segmentation"
+  authors: ["Soopil Kim", "Sion An", "Philip Chikontwe", "Sang Hyun Park"]
+  venue: "AAAI"
+  venue_full: "Proceedings of the AAAI Conference on Artificial Intelligence"
+  year: 2021
+  date: 2021-05-18
+  type: conference
+  doi: "10.1609/aaai.v35i3.16275"
+  links:
+    paper: "https://doi.org/10.1609/aaai.v35i3.16275"
+  selected: false
+  topics: [medical-imaging, few-shot]
+  openalex: W3174565264
+
+- title: "Synthesize and Segment: Towards Improved Catheter Segmentation via Adversarial Augmentation"
+  authors: ["Ihsan Ullah", "Philip Chikontwe", "Hongsoo Choi", "Chang‐Hwan Yoon", "Sang Hyun Park"]
+  venue: "Applied Sciences"
+  venue_full: "Applied Sciences"
+  year: 2021
+  date: 2021-02-11
+  type: journal
+  doi: "10.3390/app11041638"
+  links:
+    paper: "https://doi.org/10.3390/app11041638"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W3130814589
+
+- title: "Transformation guided representation GAN for pose invariant face recognition"
+  authors: ["Philip Chikontwe", "Yongbin Gao", "Hyo Jong Lee"]
+  venue: "Multidimensional Systems and Signal Processing"
+  venue_full: "Multidimensional Systems and Signal Processing"
+  year: 2021
+  date: 2021-01-03
+  type: journal
+  doi: "10.1007/s11045-020-00752-x"
+  links:
+    paper: "https://doi.org/10.1007/s11045-020-00752-x"
+  selected: false
+  topics: []
+  openalex: W3119035474
+
+- title: "Quantitative Assessment of Chest CT Patterns in COVID-19 and Bacterial Pneumonia Patients: a Deep Learning Perspective"
+  authors: ["Myeongkyun Kang", "Kyung Soo Hong", "Philip Chikontwe", "Miguel A. Cabra de Luna", "Jong Geol Jang", "Jongsoo Park", "Kyeong Cheol Shin", "Sang Hyun Park", "June Hong Ahn"]
+  venue: "Journal of Korean Medical Science"
+  venue_full: "Journal of Korean Medical Science"
+  year: 2021
+  date: 2021-01-01
+  type: journal
+  doi: "10.3346/jkms.2021.36.e46"
+  links:
+    paper: "https://doi.org/10.3346/jkms.2021.36.e46"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W3122557354
+
+- title: "Low-Dose CT Denoising Using Pseudo-CT Image Pairs"
+  authors: ["Dongkyu Won", "Euijin Jung", "Sion An", "Philip Chikontwe", "Sang Hyun Park"]
+  venue: "PRIME 2021"
+  venue_full: "International Workshop on PRedictive Intelligence In MEdicine"
+  year: 2021
+  date: 2021-01-01
+  type: conference
+  doi: "10.1007/978-3-030-87602-9_1"
+  links:
+    paper: "https://doi.org/10.1007/978-3-030-87602-9_1"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W3204485711
+
+- title: "Mixing-AdaSIN: Constructing a De-biased Dataset Using Adaptive Structural Instance Normalization and Texture Mixing"
+  authors: ["Myeongkyun Kang", "Philip Chikontwe", "Miguel A. Cabra de Luna", "Kyung Soo Hong", "June Hong Ahn", "Sang Hyun Park"]
+  venue: "PRIME 2021"
+  venue_full: "International Workshop on PRedictive Intelligence In MEdicine"
+  year: 2021
+  date: 2021-01-01
+  type: conference
+  doi: "10.1007/978-3-030-87602-9_4"
+  links:
+    paper: "https://doi.org/10.1007/978-3-030-87602-9_4"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W3210650378
+
+- title: "Few-Shot Relation Learning with Attention for EEG-based Motor Imagery Classification"
+  authors: ["Sion An", "Soopil Kim", "Philip Chikontwe", "Sang Hyun Park"]
+  venue: "IROS 2020"
+  venue_full: "2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+  year: 2020
+  date: 2020-10-24
+  type: conference
+  doi: "10.1109/iros45743.2020.9340933"
+  links:
+    paper: "https://doi.org/10.1109/iros45743.2020.9340933"
+  selected: false
+  topics: [few-shot]
+  openalex: W3009180679
+
+- title: "Multiple Instance Learning with Center Embeddings for Histopathology Classification"
+  authors: ["Philip Chikontwe", "Meejeong Kim", "Soo Jeong Nam", "Heounjeong Go", "Sang Hyun Park"]
+  venue: "MICCAI 2020"
+  venue_full: "International Conference on Medical Image Computing and Computer-Assisted Intervention"
+  year: 2020
+  date: 2020-01-01
+  type: conference
+  doi: "10.1007/978-3-030-59722-1_50"
+  links:
+    paper: "https://doi.org/10.1007/978-3-030-59722-1_50"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W3091730259
+
+- title: "Two-Step U-Nets for Brain Tumor Segmentation and Random Forest with Radiomics for Survival Time Prediction"
+  authors: ["Soopil Kim", "Miguel A. Cabra de Luna", "Philip Chikontwe", "Sang Hyun Park"]
+  venue: "BrainLes 2020"
+  venue_full: "International MICCAI Brainlesion Workshop"
+  year: 2020
+  date: 2020-01-01
+  type: conference
+  doi: "10.1007/978-3-030-46640-4_19"
+  links:
+    paper: "https://doi.org/10.1007/978-3-030-46640-4_19"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W3027085571
+
+- title: "Guidewire Tip Tracking using U-Net with Shape and Motion Constraints"
+  authors: ["Ihsan Ullah", "Philip Chikontwe", "Sang Hyun Park"]
+  venue: "ICAIIC 2019"
+  venue_full: "2019 International Conference on Artificial Intelligence in Information and Communication (ICAIIC)"
+  year: 2019
+  date: 2019-02-01
+  type: conference
+  doi: "10.1109/icaiic.2019.8669088"
+  links:
+    paper: "https://doi.org/10.1109/icaiic.2019.8669088"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W2924253046
+
+- title: "Enhancement of Perivascular Spaces Using Densely Connected Deep Convolutional Neural Network"
+  authors: ["Euijin Jung", "Philip Chikontwe", "Xiaopeng Zong", "Weili Lin", "Dinggang G. Shen", "Sang Hyun Park"]
+  venue: "IEEE Access"
+  venue_full: "IEEE Access"
+  year: 2019
+  date: 2019-01-01
+  type: journal
+  doi: "10.1109/access.2019.2896911"
+  links:
+    paper: "https://doi.org/10.1109/access.2019.2896911"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W2911913754
+
+- title: "Real-Time Tracking of Guidewire Robot Tips Using Deep Convolutional Neural Networks on Successive Localized Frames"
+  authors: ["Ihsan Ullah", "Philip Chikontwe", "Sang Hyun Park"]
+  venue: "IEEE Access"
+  venue_full: "IEEE Access"
+  year: 2019
+  date: 2019-01-01
+  type: journal
+  doi: "10.1109/access.2019.2950263"
+  links:
+    paper: "https://doi.org/10.1109/access.2019.2950263"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W2982328999
+
+- title: "Catheter Synthesis in X-Ray Fluoroscopy with Generative Adversarial Networks"
+  authors: ["Ihsan Ullah", "Philip Chikontwe", "Sang Hyun Park"]
+  venue: "PRIME 2019"
+  venue_full: "International Workshop on PRedictive Intelligence In MEdicine"
+  year: 2019
+  date: 2019-01-01
+  type: conference
+  doi: "10.1007/978-3-030-32281-6_13"
+  links:
+    paper: "https://doi.org/10.1007/978-3-030-32281-6_13"
+  selected: false
+  topics: [medical-imaging]
+  openalex: W2980200943
+
+- title: "Deep Multi-Task Network for Learning Person Identity and Attributes"
+  authors: ["Philip Chikontwe", "Hyo Jong Lee"]
+  venue: "IEEE Access"
+  venue_full: "IEEE Access"
+  year: 2018
+  date: 2018-01-01
+  type: journal
+  doi: "10.1109/access.2018.2875783"
+  links:
+    paper: "https://doi.org/10.1109/access.2018.2875783"
+  selected: false
+  topics: []
+  openalex: W2895810810
+
+- title: "Face sketch synthesis using conditional adversarial networks"
+  authors: ["Philip Chikontwe", "Lee Hyo Jong"]
+  venue: "ICTC 2017"
+  venue_full: "2017 International Conference on Information and Communication Technology Convergence (ICTC)"
+  year: 2017
+  date: 2017-10-01
+  type: conference
+  doi: "10.1109/ictc.2017.8191006"
+  links:
+    paper: "https://doi.org/10.1109/ictc.2017.8191006"
+  selected: false
+  topics: []
+  openalex: W2774830233
+
+- title: "Towards Robust Face Sketch Synthesis with Style Transfer Algorithms"
+  authors: ["Philip Chikontwe", "Hyo Jong Lee"]
+  venue: "IT Convergence and Security 2017"
+  venue_full: "IT Convergence and Security 2017"
+  year: 2017
+  date: 2017-08-30
+  type: conference
+  doi: "10.1007/978-981-10-6451-7_21"
+  links:
+    paper: "https://doi.org/10.1007/978-981-10-6451-7_21"
+  selected: false
+  topics: []
+  openalex: W2752623468

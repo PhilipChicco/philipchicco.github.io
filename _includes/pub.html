@@ -1,0 +1,79 @@
+{%- comment -%}
+  One publication. Usage: {% include pub.html pub=pub thumb=true %}
+{%- endcomment -%}
+{%- assign pub = include.pub -%}
+{%- assign hl = site.profile.highlight_name -%}
+{%- assign n = pub.authors | size -%}
+{%- assign lb = "{" -%}
+<article class="pub{% if include.thumb %} pub--thumb{% endif %}{% if pub.highlight %} pub--highlight{% endif %}"
+  data-type="{{ pub.type | default: 'journal' }}" data-topics="{{ pub.topics | join: ' ' }}"
+  data-selected="{% if pub.selected or pub.highlight %}true{% endif %}">
+  {%- if include.thumb %}
+  <div class="pub-thumb">
+    {%- if pub.image %}
+    <img src="{{ pub.image | relative_url }}" alt="" loading="lazy">
+    {%- else %}
+    <div class="pub-tile"><span>{{ pub.venue }}</span></div>
+    {%- endif %}
+  </div>
+  {%- endif %}
+  <div class="pub-body">
+    <div class="pub-badges">
+      <span class="badge badge--venue">{{ pub.venue }}</span>
+      {%- if pub.highlight %}<span class="badge badge--highlight">{% include icon.html name="star" %}{{ pub.highlight }}</span>{% endif %}
+      {%- if pub.type == "preprint" %}<span class="badge">Preprint</span>{% endif %}
+    </div>
+    <h3 class="pub-title">
+      {%- assign main_link = pub.links.paper | default: pub.links.pdf | default: pub.links.arxiv -%}
+      {%- if main_link %}<a href="{{ main_link }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif -%}
+    </h3>
+    <p class="pub-authors">
+      {%- assign gap = false -%}
+      {%- for a in pub.authors -%}
+        {%- assign show = false -%}
+        {%- if n <= 10 or forloop.index <= 3 or forloop.last -%}{%- assign show = true -%}{%- endif -%}
+        {%- if a contains hl -%}{%- assign show = true -%}{%- endif -%}
+        {%- if show -%}
+          {%- if gap %}<span class="muted">…</span>, {% endif -%}
+          {%- assign gap = false -%}
+          {%- if a contains hl -%}<b>{{ a }}</b>{%- else -%}{{ a }}{%- endif -%}{%- unless forloop.last -%}, {% endunless -%}
+        {%- else -%}
+          {%- assign gap = true -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </p>
+    <p class="pub-venue">{{ pub.venue_full | default: pub.venue }}, {{ pub.year }}</p>
+    <div class="pub-actions">
+      {%- for l in pub.links -%}
+        {%- case l[0] -%}
+          {%- when "pdf" -%}{%- assign label = "PDF" -%}
+          {%- when "arxiv" -%}{%- assign label = "arXiv" -%}
+          {%- else -%}{%- assign label = l[0] | capitalize -%}
+        {%- endcase %}
+      <a class="chip-btn" href="{{ l[1] }}" target="_blank" rel="noopener">{{ label }}</a>
+      {%- endfor %}
+      <button class="chip-btn" type="button" data-bibtex aria-expanded="false">BibTeX</button>
+    </div>
+    <div class="bibtex" hidden>
+      <button class="bibtex-copy" type="button" data-copy>Copy</button>
+<pre>
+{%- if pub.bibtex -%}{{ pub.bibtex | strip | escape }}{%- else -%}
+{%- assign last = pub.authors | first | split: " " | last | downcase | replace: "‐", "" | replace: "-", "" -%}
+{%- assign word = pub.title | split: " " | first | downcase | remove: ":" | remove: "-" | remove: "," -%}
+{%- case pub.type -%}
+  {%- when "conference" -%}{%- assign btype = "inproceedings" -%}{%- assign vfield = "booktitle" -%}
+  {%- when "preprint" -%}{%- assign btype = "misc" -%}{%- assign vfield = "howpublished" -%}
+  {%- else -%}{%- assign btype = "article" -%}{%- assign vfield = "journal" -%}
+{%- endcase -%}
+@{{ btype }}{{ lb }}{{ last }}{{ pub.year }}{{ word }},
+  title = {{ lb }}{{ pub.title | escape }}},
+  author = {{ lb }}{{ pub.authors | join: " and " | escape }}},
+  {{ vfield }} = {{ lb }}{{ pub.venue_full | default: pub.venue | escape }}},
+  year = {{ lb }}{{ pub.year }}}{% if pub.doi %},
+  doi = {{ lb }}{{ pub.doi }}}{% endif %}
+}
+{%- endif -%}
+</pre>
+    </div>
+  </div>
+</article>

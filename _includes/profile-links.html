@@ -1,0 +1,9 @@
+{%- assign p = site.profile -%}
+<div class="profile-links">
+  {% if p.scholar %}<a href="{{ p.scholar }}" target="_blank" rel="noopener">{% include icon.html name="scholar" %}Scholar</a>{% endif %}
+  {% if p.github %}<a href="{{ p.github }}" target="_blank" rel="noopener">{% include icon.html name="github" %}GitHub</a>{% endif %}
+  {% if p.linkedin %}<a href="{{ p.linkedin }}" target="_blank" rel="noopener">{% include icon.html name="linkedin" %}LinkedIn</a>{% endif %}
+  {% if p.orcid %}<a href="https://orcid.org/{{ p.orcid }}" target="_blank" rel="noopener">{% include icon.html name="orcid" %}ORCID</a>{% endif %}
+  {% if p.email %}<a href="mailto:{{ p.email }}">{% include icon.html name="email" %}Email</a>{% endif %}
+  {% if p.cv %}<a href="{{ p.cv | relative_url }}" target="_blank" rel="noopener">{% include icon.html name="cv" %}CV</a>{% endif %}
+</div>
