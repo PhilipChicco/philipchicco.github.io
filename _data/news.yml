@@ -3,8 +3,20 @@
 # don't need to add those here. Markdown works in `text`.
 #
 #   date: 2026-01-15
-#   type: talk | award | career | service | paper
+#   type: talk | award | career | service | paper | highlight
+#   label: "Oral"        # optional: custom tag text (defaults to the type)
 #   text: "Gave an invited talk at [Venue](https://...)."
+#   link: https://...    # optional "Read →" link
+
+- date: 2026-09-24
+  type: highlight
+  label: Oral
+  text: "*Privacy-Preserving Federated Distillation of Foundation Models for Multi-Institutional Pediatric Glioma Recurrence Prediction* was selected for an **oral presentation** at the PedAItrics workshop, MICCAI 2026."
+
+- date: 2026-09-24
+  type: service
+  text: "Serving as Associate Topic Editor, with Junhan Zhao, for the *Frontiers in Medicine* special issue “Multimodal, Foundation and Agent AI for Real-World Clinical Decision Support”. Submissions are open until January 22, 2027."
+  link: https://www.frontiersin.org/research-topics/81403/multimodal-foundation-and-agent-ai-for-real-world-clinical-decision-support-patient-level-diagnosis-prognosis-and-treatment-selection
 
 - date: 2024-07-01
   type: paper
