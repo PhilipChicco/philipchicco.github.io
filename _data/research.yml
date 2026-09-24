@@ -1,0 +1,26 @@
+# Research areas on the Research page. `key` matches the `topics` field in
+# publications.yml, so each area lists its most recent related papers.
+
+- key: medical-imaging
+  title: Medical Image Analysis
+  summary: "Developing advanced deep learning algorithms for medical image processing, segmentation, and classification. Current focus includes:"
+  points:
+    - Histopathology image analysis
+    - Multi-modal medical image processing
+    - Automated disease detection and classification
+
+- key: few-shot
+  title: Few-Shot Learning
+  summary: "Innovation in learning from limited data samples through:"
+  points:
+    - Novel neural network architectures
+    - Transfer learning strategies
+    - Meta-learning approaches
+
+- key: vision-language
+  title: Visual-Language Representation
+  summary: "Exploring the intersection of vision and language through:"
+  points:
+    - Multi-modal learning frameworks
+    - Cross-modal representation learning
+    - Image text retrieval

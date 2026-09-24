@@ -7,22 +7,35 @@ url: "https://philipchicco.github.io"
 lang: en-US
 timezone: America/New_York
 
+# Profile: used in the banner, homepage links and footer.
+profile:
+  role: Research Fellow
+  lab: Yu Lab
+  lab_url: https://yu-lab.hms.harvard.edu/
+  affiliation: Department of Biomedical Informatics, Harvard Medical School
+  location: Boston, MA
+  email: philip_chikontwe@hms.harvard.edu
+  scholar: https://scholar.google.com/citations?user=8jHbkMcAAAAJ
+  github: https://github.com/philipchicco
+  linkedin: https://kr.linkedin.com/in/philip-chikontwe-52397a7a
+  orcid: 0000-0002-6995-2312
+  cv: /assets/files/resume.pdf
+  # Last name as it appears in author lists; it is bolded in publications.
+  highlight_name: Chikontwe
+  interests: [Computational pathology, Multiple instance learning, Vision-language models, Few-shot learning]
+
 # Google Analytics
 # Optional
 google_analytics: G-DYKEMKK790  # GA4 tracking ID
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
-permalink: /:year/:month/:day/:title/
-safe: true
-lsi: false
 
 # Plugin Settings
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-feed
+  - jekyll-redirect-from
 
 # SEO Settings
 author: Philip Chikontwe
@@ -35,12 +48,14 @@ social:
     - https://scholar.google.com/citations?user=8jHbkMcAAAAJ
     - https://kr.linkedin.com/in/philip-chikontwe-52397a7a
     - https://github.com/philipchicco
+    - https://orcid.org/0000-0002-6995-2312
 
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /news/:year/:month/:day/:title/
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: /assets/img/header-bg.webp
 
 # Exclude from processing
 exclude:
@@ -50,6 +65,7 @@ exclude:
   - vendor
   - .git
   - .github
+  - .idea
   - README.md
+  - scripts
   - test.sh
-  - run.sh

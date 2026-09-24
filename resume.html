@@ -1,0 +1,15 @@
+---
+title: CV
+permalink: /resume/
+redirect_from:
+  - /cv/
+---
+{%- assign cv = site.profile.cv | relative_url -%}
+{% capture lead %}<a class="btn" href="{{ cv }}" download>{% include icon.html name="cv" %}Download PDF</a> <a class="btn btn--ghost" href="{{ cv }}" target="_blank" rel="noopener">Open in new tab</a>{% endcapture %}
+{% include page-hero.html lead=lead %}
+
+<div class="wrap">
+  <div class="cv-frame card">
+    <iframe src="{{ cv }}" title="Curriculum vitae of {{ site.title }}" loading="lazy"></iframe>
+  </div>
+</div>
