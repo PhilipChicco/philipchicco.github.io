@@ -1,9 +1,12 @@
 # Professional service, shown on the Experience page and summarised on the homepage.
 
 editorial:
-  - role: Associate Editor
+  - role: Associate Topic Editor
     venue: Frontiers in Medicine
-    url: https://www.frontiersin.org/journals/medicine
+    kind: Special Issue          # shown as "Special Issue: <topic>"
+    deadline: 2027-01-22         # optional: shows a Call for Papers card on the homepage until this date
+    topic: "Multimodal, Foundation and Agent AI for Real-World Clinical Decision Support: Patient-Level Diagnosis, Prognosis, and Treatment Selection"
+    url: https://www.frontiersin.org/research-topics/81403/multimodal-foundation-and-agent-ai-for-real-world-clinical-decision-support-patient-level-diagnosis-prognosis-and-treatment-selection
 
 reviewing:
   conferences: [MICCAI, CVPR, ECCV, NeurIPS]

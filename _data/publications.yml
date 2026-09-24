@@ -17,7 +17,7 @@
 #   news:       "One-line announcement"  # optional: also posts it to News on "date"
 #
 # To add new papers automatically: python3 scripts/sync_publications.py
-# (also runs weekly on GitHub and opens a pull request for you to review).
+# (also runs monthly on GitHub, checks OpenAlex and Google Scholar, and opens a pull request for you to review).
 
 - title: "Biallelic loss of RB1 in hepatocellular carcinoma as synthetic lethal target for artificial intelligence-guided therapy"
   authors: ["Jihyun An", "Wonkyung Kim", "Xiumei Zhang", "Philip Chikontwe", "Jin‐Sung Ju", "Bora Oh", "Ji‐Hye Oh", "Eun Ju Yang", "Hyun Namgung", "Dakeun Lee", "Yue Pu", "Lijie Chen", "Sang Hyun Park", "Joong Sup Shim", "Chang Ohk Sung", "Ju Hyun Shim"]

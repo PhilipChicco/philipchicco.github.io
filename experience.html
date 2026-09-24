@@ -31,7 +31,8 @@ lead: Positions, education, professional service and mentoring.
         <h3>Editorial</h3>
         <ul class="plain">
           {%- for e in s.editorial %}
-          <li><strong>{{ e.role }}</strong><br><a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.venue }}</a></li>
+          <li><strong>{{ e.role }}</strong>, {{ e.venue }}
+            {%- if e.topic %}<br><span class="muted">{{ e.kind | default: "Research Topic" }}:</span> <a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.topic }}</a>{% else %}<br><a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.venue }}</a>{% endif %}</li>
           {%- endfor %}
         </ul>
       </div>

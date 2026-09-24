@@ -1,5 +1,5 @@
-# Weekly check for new publications on OpenAlex (linked to your ORCID).
-# If it finds any, it opens a pull request that adds them to
+# Monthly check for new publications on OpenAlex (linked to your ORCID) and
+# your Google Scholar profile. If it finds any, it opens a pull request that adds them to
 # _data/publications.yml. Review it, set `selected`/`topics`/`news`, then merge.
 #
 # One-time setup: Settings -> Actions -> General -> Workflow permissions ->
@@ -10,7 +10,7 @@ name: Sync publications
 
 on:
   schedule:
-    - cron: "0 13 * * 1"   # Mondays, 9am Boston time
+    - cron: "0 13 1 * *"   # 1st of every month, 9am Boston time
   workflow_dispatch:
 
 permissions:
@@ -32,10 +32,11 @@ jobs:
         with:
           branch: bot/sync-publications
           delete-branch: true
-          commit-message: Add new publications from OpenAlex
-          title: New publications found on OpenAlex
+          commit-message: Add new publications from OpenAlex and Google Scholar
+          title: New publications found (OpenAlex + Google Scholar)
           body: |
-            The weekly sync found new publications and added them to `_data/publications.yml`.
+            The monthly sync found new publications (OpenAlex + Google Scholar) and added them to `_data/publications.yml`.
+            Entries marked "Found on Google Scholar only" need their author list completed.
 
             Before merging:
             - [ ] Check each paper is yours and the author list is right
