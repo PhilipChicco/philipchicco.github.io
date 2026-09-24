@@ -7,16 +7,15 @@ positions:
     period: 2024 – present
     detail: Machine learning, vision-language and large language models for cancer diagnosis and tumor characterization, with Prof. Kun-Hsing Yu.
 
-  # TODO: confirm title and dates for this position.
-  - title: Researcher
+  - title: Postdoctoral Researcher
     org: Medical Imaging & Signal Processing Lab (MISPL), DGIST
-    period: 2018 – 2024
-    detail: Computational pathology, few-shot learning and medical image analysis, with Prof. Sang Hyun Park.
+    period: 2023 – 2024
+    detail: Computational pathology, few-shot learning and medical image analysis, with Prof. Sang Hyun Park (now at POSTECH).
 
 education:
   - degree: Ph.D., Robotics and Mechatronics Engineering
     org: Daegu Gyeongbuk Institute of Science and Technology (DGIST), South Korea
-    year: 2023
+    year: 2018 – 2023
   - degree: M.S., Computer Science
     org: Chonbuk National University, South Korea
     year: 2018
