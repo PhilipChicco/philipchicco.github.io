@@ -1,0 +1,19 @@
+# News that isn't a paper announcement (talks, awards, roles, acceptances).
+# Paper announcements come from the `news:` field in publications.yml, so you
+# don't need to add those here. Markdown works in `text`.
+#
+#   date: 2026-01-15
+#   type: talk | award | career | service | paper
+#   text: "Gave an invited talk at [Venue](https://...)."
+
+- date: 2024-07-01
+  type: paper
+  text: "[FR-MIL](https://doi.org/10.1109/tmi.2024.3446716) published in *IEEE Transactions on Medical Imaging*."
+
+- date: 2024-06-29
+  type: paper
+  text: "[Low-Shot Prompt Tuning for MIL-based histology classification](https://doi.org/10.1007/978-3-031-72083-3_27) accepted at MICCAI 2024."
+
+- date: 2024-05-02
+  type: career
+  text: "Joined the [Yu Lab](https://yulab.hms.harvard.edu/) at Harvard Medical School as a Research Fellow."

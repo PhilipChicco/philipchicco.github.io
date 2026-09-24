@@ -43,10 +43,11 @@ bundle exec jekyll build 2>&1 | grep -i "warning\|error"
 # Test 5: Check assets
 echo -n "Checking required assets... "
 required_files=(
-    "assets/css/custom.css"
-    "assets/css/style.css"
+    "assets/css/main.css"
+    "assets/js/site.js"
     "_layouts/default.html"
-    "index.md"
+    "_data/publications.yml"
+    "index.html"
 )
 
 all_files_exist=true

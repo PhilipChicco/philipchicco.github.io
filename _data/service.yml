@@ -1,0 +1,20 @@
+# Professional service, shown on the Experience page and summarised on the homepage.
+
+editorial:
+  - role: Associate Editor
+    venue: Frontiers in Medicine
+    url: https://www.frontiersin.org/journals/medicine
+
+reviewing:
+  conferences: [MICCAI, CVPR, ECCV, NeurIPS]
+  journals:
+    - name: IEEE Transactions on Medical Imaging
+      short: IEEE TMI
+    - name: IEEE Journal of Biomedical and Health Informatics
+      short: IEEE JBHI
+
+organizing:
+  - role: Committee Member
+    event: PRIME Workshop, MICCAI 2024
+  - role: Co-Chair
+    event: PRIME Workshop, MICCAI 2022

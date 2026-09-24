@@ -1,0 +1,80 @@
+---
+title: Home
+---
+{%- assign p = site.profile -%}
+{%- assign s = site.data.service -%}
+
+<section class="banner">
+  <div class="wrap banner-inner">
+    <img class="avatar" src="{{ site.logo | relative_url }}" alt="Portrait of {{ site.title }}">
+    <div>
+      <h1>{{ site.title }}</h1>
+      <p class="role"><strong>{{ p.role }}</strong>, <a href="{{ p.lab_url }}" target="_blank" rel="noopener">{{ p.lab }}</a> · {{ p.affiliation }}</p>
+      {% include profile-links.html %}
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="intro">
+    <div class="bio">
+      <h2 class="section-title">Biography</h2>
+
+      <p>I am a Research Fellow at the <a href="https://yulab.hms.harvard.edu/" target="_blank" rel="noopener">Yu Lab</a>, Harvard Medical School and Harvard University, working with Prof. <a href="https://scholar.google.com/citations?user=szTa-JUAAAAJ" target="_blank" rel="noopener">Kun-Hsing Yu</a>. Previously, I worked at the Medical Imaging and Signal Processing Laboratory (MISPL), Daegu Gyeongbuk Institute of Science and Technology with Prof. <a href="https://scholar.google.com/citations?user=PHLTD4sAAAAJ" target="_blank" rel="noopener">Sang Hyun Park</a>.</p>
+
+      <p>I received my Ph.D. in Robotics and Mechatronics Engineering from <a href="https://www.dgist.ac.kr/en/" target="_blank" rel="noopener">DGIST</a>, South Korea in 2023, M.S. degree in Computer Science from Chonbuk National University, South Korea in 2018, and B.S. degree in Computer Science from Abdelhamid Mehri Constantine 2 University, Algeria in 2015.</p>
+
+      <p>My research focuses on leveraging machine learning, including large language models (LLMs) and computer vision, to tackle challenges in cancer diagnosis and tumor characterization. Through my interdisciplinary expertise, I strive to push the boundaries of how machine learning and language-based approaches can transform cancer diagnostics and pave the way for novel research in personalized medicine and precision oncology.</p>
+    </div>
+
+    <aside class="glance card" aria-label="At a glance">
+      <h2 class="glance-title">At a glance</h2>
+      <dl>
+        <dt>Current</dt>
+        <dd>{{ p.role }}, {{ p.lab }}<br><span class="muted">Harvard Medical School</span></dd>
+        {%- for e in s.editorial %}
+        <dt>Editorial</dt>
+        <dd>{{ e.role }}, <a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.venue }}</a></dd>
+        {%- endfor %}
+        <dt>Reviewer</dt>
+        <dd class="chips">
+          {%- for c in s.reviewing.conferences %}<span class="chip">{{ c }}</span>{% endfor -%}
+          {%- for j in s.reviewing.journals %}<span class="chip">{{ j.short }}</span>{% endfor -%}
+        </dd>
+        <dt>Interests</dt>
+        <dd class="chips">{% for i in p.interests %}<span class="chip chip--soft">{{ i }}</span>{% endfor %}</dd>
+      </dl>
+      <a class="text-link" href="{{ '/experience/' | relative_url }}">Experience &amp; service {% include icon.html name="arrow" %}</a>
+    </aside>
+  </section>
+
+  {%- assign highlights = site.data.publications | where_exp: "p", "p.highlight" -%}
+  {%- for h in highlights limit: 1 %}
+  <section class="spotlight">
+    <div class="spotlight-label">{% include icon.html name="star" %} Highlight · {{ h.highlight }}</div>
+    <a class="spotlight-title" href="{{ h.links.paper }}" target="_blank" rel="noopener">{{ h.title }}</a>
+    <p class="spotlight-meta"><em>{{ h.venue_full }}</em>, {{ h.date | date: "%B %Y" }}</p>
+  </section>
+  {%- endfor %}
+
+  <section class="block">
+    <div class="block-head">
+      <h2 class="section-title">News</h2>
+      <a class="text-link" href="{{ '/news/' | relative_url }}">All news {% include icon.html name="arrow" %}</a>
+    </div>
+    {% include news-list.html limit=6 %}
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <h2 class="section-title">Selected Publications</h2>
+      <a class="text-link" href="{{ '/publications/' | relative_url }}">All publications {% include icon.html name="arrow" %}</a>
+    </div>
+    <div class="pub-list">
+      {%- assign selected = site.data.publications | where: "selected", true -%}
+      {%- for pub in selected %}
+      {% include pub.html pub=pub thumb=true %}
+      {%- endfor %}
+    </div>
+  </section>
+</div>

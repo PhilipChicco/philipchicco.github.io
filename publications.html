@@ -1,0 +1,38 @@
+---
+title: Publications
+permalink: /publications/
+---
+{%- assign pubs = site.data.publications -%}
+{% capture lead %}{{ pubs | size }} papers and preprints. Also on <a href="{{ site.profile.scholar }}" target="_blank" rel="noopener">Google Scholar</a>.{% endcapture %}
+{% include page-hero.html lead=lead %}
+
+<div class="wrap">
+  <div class="filters" data-filters>
+    <div class="filter-row" role="group" aria-label="Filter by type">
+      <button class="filter is-on" type="button" data-filter-type="all">All</button>
+      <button class="filter" type="button" data-filter-type="selected">{% include icon.html name="star" %}Selected</button>
+      <button class="filter" type="button" data-filter-type="journal">Journal</button>
+      <button class="filter" type="button" data-filter-type="conference">Conference</button>
+      <button class="filter" type="button" data-filter-type="preprint">Preprint</button>
+    </div>
+    <div class="filter-row" role="group" aria-label="Filter by topic">
+      {%- for area in site.data.research %}
+      <button class="filter filter--topic" type="button" data-filter-topic="{{ area.key }}">{{ area.title }}</button>
+      {%- endfor %}
+      <input class="search" type="search" placeholder="Search titles, authors, venues…" aria-label="Search publications" data-search>
+    </div>
+  </div>
+  <p class="filter-empty muted" hidden>No publications match these filters.</p>
+
+  {%- assign years = pubs | group_by: "year" | sort: "name" | reverse %}
+  {%- for y in years %}
+  <section class="year-group">
+    <h2 class="year">{{ y.name }}</h2>
+    <div class="pub-list">
+      {%- for pub in y.items %}
+      {% include pub.html pub=pub %}
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endfor %}
+</div>

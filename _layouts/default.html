@@ -1,133 +1,57 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}" data-theme="light">
+<html lang="{{ site.lang | default: 'en-US' }}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-    {% seo %}
-
-    {% if site.google_analytics %}
-        {% include google-analytics.html %}
-    {% endif %}
-</head>
-<body>
-  <div class="progress-bar" id="scrollProgress"></div>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
-      // Scroll Progress Bar
-      window.onscroll = function() {
-          let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-          let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-          let scrolled = (winScroll / height) * 100;
-          document.getElementById("scrollProgress").style.transform = "scaleX(" + scrolled/100 + ")";
-      };
+    // Apply the saved theme before first paint to avoid a flash.
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
   </script>
+  <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {% seo %}
+  {% if site.google_analytics %}{% include google-analytics.html %}{% endif %}
+</head>
+<body class="{% if page.url == '/' %}is-home{% endif %}">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="container">
-        <header class="site-header">
-          <div class="header-background"></div> <!-- New background div -->
-          <div class="profile-section">
-              {% if site.logo %}
-              <img src="{{ site.logo | relative_url }}" alt="Profile" class="profile-image">
-              {% endif %}
-              <h1 class="site-title">{{ site.title }}</h1>
-              <h4 class="site-description">{{ site.description }}</h4>
-          </div>
-          
-          <nav class="site-nav">
-              <a href="/" class="nav-link">Home</a>
-              <a href="/research" class="nav-link">Research</a>
-              <a href="/publications" class="nav-link">Publications</a>
-              <a href="/teaching" class="nav-link">Teaching</a>
-              <a href="/resume" class="nav-link">Resume</a>
-              <a href="/contact" class="nav-link">Contact</a>
-          </nav>
-        </header>
-
-        <main class="content">
-          {{ content }}
-        </main>
-
-        <footer class="site-footer">
-          <div class="footer-content">
-              <p>© 2024 Philip Chikontwe. Built with Jekyll.</p>
-          </div>
-        </footer>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <img src="{{ site.logo | relative_url }}" alt="">
+        <span>{{ site.title }}</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        {%- for item in site.data.navigation %}
+        {%- if item.url == "/" -%}
+          {%- if page.url == "/" %}{% assign active = true %}{% else %}{% assign active = false %}{% endif -%}
+        {%- else -%}
+          {%- if page.url contains item.url %}{% assign active = true %}{% else %}{% assign active = false %}{% endif -%}
+        {%- endif %}
+        <a href="{{ item.url | relative_url }}"{% if active %} class="is-active" aria-current="page"{% endif %}>{{ item.title }}</a>
+        {%- endfor %}
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <span class="when-light">{% include icon.html name="moon" %}</span>
+        <span class="when-dark">{% include icon.html name="sun" %}</span>
+      </button>
     </div>
+  </header>
 
-    <script>
+  <main id="main">
+    {{ content }}
+  </main>
 
-        <!-- const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-        
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                document.documentElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light');
-            }    
-        }
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© {{ site.time | date: "%Y" }} {{ site.title }} · <a href="{{ '/contact/' | relative_url }}">Contact</a></p>
+      <p class="muted">Last updated {{ site.time | date: "%B %-d, %Y" }}</p>
+    </div>
+  </footer>
 
-        toggleSwitch.addEventListener('change', switchTheme, false);
-
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        document.documentElement.setAttribute('data-theme', currentTheme);
-        toggleSwitch.checked = currentTheme === 'dark'; -->
-    
-      function reveal() {
-          var reveals = document.querySelectorAll(".reveal");
-          
-          reveals.forEach(element => {
-              var windowHeight = window.innerHeight;
-              var elementTop = element.getBoundingClientRect().top;
-              var elementVisible = 150;
-              
-              if (elementTop < windowHeight - elementVisible) {
-                  element.classList.add("active");
-              }
-          });
-      }
-      
-      window.addEventListener("scroll", reveal);
-      reveal(); // Initial check
-      
-      // Theme toggle with animation
-      const toggleTheme = () => {
-          const html = document.documentElement;
-          const currentTheme = html.getAttribute('data-theme');
-          const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-          
-          html.style.setProperty('--transition-speed', '0.5s');
-          html.setAttribute('data-theme', newTheme);
-          localStorage.setItem('theme', newTheme);
-          
-          setTimeout(() => {
-              html.style.setProperty('--transition-speed', '0.3s');
-          }, 500);
-      };
-      
-      document.querySelector('.theme-switch').addEventListener('click', toggleTheme);
-
-      // parallax effect
-      <!-- document.addEventListener('mousemove', (e) => {
-        const header = document.querySelector('.site-header');
-        const headerRect = header.getBoundingClientRect();
-        const mouseX = e.clientX - headerRect.left;
-        const mouseY = e.clientY - headerRect.top;
-        
-        const xPercent = (mouseX / headerRect.width - 0.5) * 20;
-        const yPercent = (mouseY / headerRect.height - 0.5) * 20;
-        
-        header.style.transform = `perspective(1000px) rotateX(${yPercent}deg) rotateY(${xPercent}deg)`;
-      });
-
-      document.querySelector('.site-header').addEventListener('mouseleave', () => {
-        document.querySelector('.site-header').style.transform = 'none';
-      }); -->
-
-      </script>
-
+  <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
 </body>
 </html>

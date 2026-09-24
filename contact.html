@@ -1,0 +1,24 @@
+---
+title: Contact
+permalink: /contact/
+lead: I'm always open to research collaborations and discussions.
+---
+{%- assign p = site.profile -%}
+{% include page-hero.html %}
+
+<div class="wrap">
+  <div class="contact-grid">
+    <div class="card">
+      <h2>Email</h2>
+      <p><a href="mailto:{{ p.email }}">{{ p.email }}</a></p>
+    </div>
+    <div class="card">
+      <h2>Location</h2>
+      <p>{{ p.lab }}, DBMI<br>Harvard Medical School<br>Boston, MA 02115</p>
+    </div>
+    <div class="card">
+      <h2>Elsewhere</h2>
+      {% include profile-links.html %}
+    </div>
+  </div>
+</div>
