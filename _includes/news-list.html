@@ -19,7 +19,7 @@
   <li class="news-item{% if kind == 'highlight' %} news-item--highlight{% endif %}">
     <time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: "%b %Y" }}</time>
     <div>
-      <span class="tag tag--{{ kind }}">{% if kind == "highlight" %}{% include icon.html name="star" %}{% endif %}{{ kind }}</span>
+      <span class="tag tag--{{ kind }}">{% if kind == "highlight" %}{% include icon.html name="star" %}{% endif %}{{ item.label | default: kind }}</span>
       {{ text | markdownify | remove: "<p>" | remove: "</p>" | strip }}
       {%- if link %} <a class="news-link" href="{{ link }}" target="_blank" rel="noopener">Read&nbsp;→</a>{% endif %}
     </div>
