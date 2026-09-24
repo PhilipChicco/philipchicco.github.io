@@ -1,0 +1,38 @@
+---
+title: Research
+permalink: /research/
+lead: My research focuses on developing innovative algorithms for medical image analysis and machine learning, with particular emphasis in the following core areas.
+---
+{% include page-hero.html %}
+
+<div class="wrap">
+  <div class="areas">
+    {%- for area in site.data.research %}
+    {%- assign related = site.data.publications | where_exp: "p", "p.topics contains area.key" %}
+    <section class="area card">
+      <div class="area-head">
+        <span class="area-index">0{{ forloop.index }}</span>
+        <h2>{{ area.title }}</h2>
+      </div>
+      <p>{{ area.summary }}</p>
+      <ul class="ticks">
+        {%- for pt in area.points %}<li>{{ pt }}</li>{% endfor %}
+      </ul>
+      {%- if related.size > 0 %}
+      <div class="area-pubs">
+        <h3>Recent papers</h3>
+        <ul>
+          {%- for pub in related limit: 4 %}
+          <li>
+            <a href="{{ pub.links.paper | default: pub.links.pdf | default: pub.links.arxiv }}" target="_blank" rel="noopener">{{ pub.title }}</a>
+            <span class="muted">{{ pub.venue }}{% unless pub.venue contains pub.year %} {{ pub.year }}{% endunless %}</span>
+          </li>
+          {%- endfor %}
+        </ul>
+        <a class="text-link" href="{{ '/publications/' | relative_url }}?topic={{ area.key }}">All {{ related.size }} papers {% include icon.html name="arrow" %}</a>
+      </div>
+      {%- endif %}
+    </section>
+    {%- endfor %}
+  </div>
+</div>

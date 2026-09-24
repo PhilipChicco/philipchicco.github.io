@@ -1,15 +1,12 @@
-main:
-  - title: "Home"
-    url: "/"
-  - title: "Research"
-    url: "/pages/research/"
-  - title: "Publications"
-    url: "/pages/publications/"
-  - title: "Teaching"
-    url: "/pages/teaching/"
-  - title: "Contact"
-    url: "/pages/contact/"
-  - title: "About"
-    url: "/pages/about/"
-  - title: "CV"
-    url: "/pages/cv/"
+- title: About
+  url: /
+- title: Research
+  url: /research/
+- title: Publications
+  url: /publications/
+- title: Experience
+  url: /experience/
+- title: News
+  url: /news/
+- title: CV
+  url: /resume/

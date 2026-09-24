@@ -1,0 +1,74 @@
+---
+title: Experience
+permalink: /experience/
+redirect_from:
+  - /teaching/
+lead: Positions, education, professional service and mentoring.
+---
+{%- assign x = site.data.experience -%}
+{%- assign s = site.data.service -%}
+{% include page-hero.html %}
+
+<div class="wrap exp">
+  <section class="exp-section">
+    <h2 class="section-title">Positions</h2>
+    <ol class="timeline">
+      {%- for item in x.positions %}
+      <li>
+        <span class="when">{{ item.period }}</span>
+        <h3>{{ item.title }}</h3>
+        <p class="org">{% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.org }}</a>{% else %}{{ item.org }}{% endif %}</p>
+        {%- if item.detail %}<p class="muted">{{ item.detail }}</p>{% endif %}
+      </li>
+      {%- endfor %}
+    </ol>
+  </section>
+
+  <section class="exp-section">
+    <h2 class="section-title">Professional Service</h2>
+    <div class="service-grid">
+      <div class="card">
+        <h3>Editorial</h3>
+        <ul class="plain">
+          {%- for e in s.editorial %}
+          <li><strong>{{ e.role }}</strong><br><a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.venue }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Reviewer</h3>
+        <p class="label">Conferences</p>
+        <div class="chips">{% for c in s.reviewing.conferences %}<span class="chip">{{ c }}</span>{% endfor %}</div>
+        <p class="label">Journals</p>
+        <ul class="plain">{% for j in s.reviewing.journals %}<li>{{ j.name }} <span class="muted">({{ j.short }})</span></li>{% endfor %}</ul>
+      </div>
+      <div class="card">
+        <h3>Organizing</h3>
+        <ul class="plain">
+          {%- for o in s.organizing %}
+          <li><strong>{{ o.role }}</strong><br>{{ o.event }}</li>
+          {%- endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="exp-section">
+    <h2 class="section-title">Education</h2>
+    <ol class="timeline">
+      {%- for e in x.education %}
+      <li>
+        <span class="when">{{ e.year }}</span>
+        <h3>{{ e.degree }}</h3>
+        <p class="org">{{ e.org }}</p>
+      </li>
+      {%- endfor %}
+    </ol>
+  </section>
+
+  <section class="exp-section">
+    <h2 class="section-title">Mentoring</h2>
+    <p>I am passionate about educating the next generation of researchers and practitioners in medical image analysis and machine learning.</p>
+    <div class="chips">{% for m in x.mentoring %}<span class="chip chip--soft">{{ m }}</span>{% endfor %}</div>
+  </section>
+</div>

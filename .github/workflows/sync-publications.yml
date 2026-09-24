@@ -1,0 +1,45 @@
+# Weekly check for new publications on OpenAlex (linked to your ORCID).
+# If it finds any, it opens a pull request that adds them to
+# _data/publications.yml. Review it, set `selected`/`topics`/`news`, then merge.
+#
+# One-time setup: Settings -> Actions -> General -> Workflow permissions ->
+# enable "Allow GitHub Actions to create and approve pull requests".
+# You can also run it any time from the Actions tab ("Run workflow").
+
+name: Sync publications
+
+on:
+  schedule:
+    - cron: "0 13 * * 1"   # Mondays, 9am Boston time
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Look for new publications
+        run: python3 scripts/sync_publications.py
+      - name: Open a pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: bot/sync-publications
+          delete-branch: true
+          commit-message: Add new publications from OpenAlex
+          title: New publications found on OpenAlex
+          body: |
+            The weekly sync found new publications and added them to `_data/publications.yml`.
+
+            Before merging:
+            - [ ] Check each paper is yours and the author list is right
+            - [ ] Check the venue label (e.g. "MICCAI 2026")
+            - [ ] Set `selected: true` for papers to feature on the homepage
+            - [ ] Add `topics:` and an optional `news:` line or `highlight:` badge
+            - [ ] Add anything that isn't yours to `scripts/publications_ignore.txt`

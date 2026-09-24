@@ -1,0 +1,30 @@
+# Positions, education and mentoring, shown on the Experience page.
+
+positions:
+  - title: Research Fellow
+    org: Yu Lab, Department of Biomedical Informatics, Harvard Medical School
+    url: https://yu-lab.hms.harvard.edu/
+    period: 2024 – present
+    detail: Machine learning, vision-language and large language models for cancer diagnosis and tumor characterization, with Prof. Kun-Hsing Yu.
+
+  # TODO: confirm title and dates for this position.
+  - title: Researcher
+    org: Medical Imaging & Signal Processing Lab (MISPL), DGIST
+    url: https://sites.google.com/view/mispl/home
+    period: 2018 – 2024
+    detail: Computational pathology, few-shot learning and medical image analysis, with Prof. Sang Hyun Park.
+
+education:
+  - degree: Ph.D., Robotics and Mechatronics Engineering
+    org: Daegu Gyeongbuk Institute of Science and Technology (DGIST), South Korea
+    year: 2023
+  - degree: M.S., Computer Science
+    org: Chonbuk National University, South Korea
+    year: 2018
+  - degree: B.S., Computer Science
+    org: Abdelhamid Mehri Constantine 2 University, Algeria
+    year: 2015
+
+mentoring:
+  - Master's students (1)
+  - Undergraduate research intern (1)

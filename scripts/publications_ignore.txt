@@ -1,0 +1,4 @@
+# Works the sync script should never add. One per line: DOI, OpenAlex ID (W...), or exact title.
+10.2139/ssrn.4387006  # SSRN preprint of "Structure-preserving image translation..." (Pattern Recognition 2023)
+10.2139/ssrn.4331181  # SSRN preprint of "Content preserving image translation..." (Neural Networks 2023)
+10.17615/szsr-3z69    # University repository copy of the 2019 IEEE Access perivascular spaces paper
