@@ -19,7 +19,6 @@ profile:
   github: https://github.com/philipchicco
   linkedin: https://www.linkedin.com/in/philip-chikontwe-ph-d-52397a7a/
   orcid: 0000-0002-6995-2312
-  cv: /assets/files/resume.pdf
   # Last name as it appears in author lists; it is bolded in publications.
   highlight_name: Chikontwe
   interests: [Computational pathology, Multiple instance learning, Vision-language models, Few-shot learning]

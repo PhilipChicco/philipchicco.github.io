@@ -316,10 +316,7 @@ p { margin: 0 0 1em; }
 .plain { list-style: none; padding: 0; margin: 0; }
 .plain li { padding: 4px 0; line-height: 1.5; }
 
-/* ---------- CV & contact ---------- */
-.page-hero .lead .btn { margin: 6px 6px 0 0; }
-.cv-frame { padding: 0; overflow: hidden; margin: 28px 0; }
-.cv-frame iframe { display: block; width: 100%; height: 82vh; border: 0; background: #fff; }
+/* ---------- Contact ---------- */
 .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; padding: 30px 0; }
 .contact-grid h2 { font-size: 1rem; margin: 0 0 8px; }
 .contact-grid p { margin: 0; word-break: break-word; }
