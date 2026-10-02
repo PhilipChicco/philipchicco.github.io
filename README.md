@@ -16,7 +16,6 @@ Content lives in `_data/` as YAML files, so most updates never touch HTML.
 | Positions, education, mentoring | `_data/experience.yml` |
 | Research areas | `_data/research.yml` (papers link via their `topics`) |
 | Name, role, links, interests | `profile:` in `_config.yml` |
-| CV | replace `assets/files/resume.pdf` |
 | Colours | the tokens at the top of `assets/css/main.css` |
 
 Each YAML file starts with a comment that explains its fields.
