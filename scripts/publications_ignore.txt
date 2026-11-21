@@ -2,3 +2,5 @@
 10.2139/ssrn.4387006  # SSRN preprint of "Structure-preserving image translation..." (Pattern Recognition 2023)
 10.2139/ssrn.4331181  # SSRN preprint of "Content preserving image translation..." (Neural Networks 2023)
 10.17615/szsr-3z69    # University repository copy of the 2019 IEEE Access perivascular spaces paper
+10.48550/arxiv.2603.05884  # arXiv preprint of "Clinical readiness of foundation and agentic AI..." (Med 2026); linked from that entry
+Computational Pathology in the Era of Emerging Foundation and Agentic AI--International Expert Perspectives on Clinical Integration and Translational Readiness

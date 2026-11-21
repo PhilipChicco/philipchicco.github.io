@@ -102,6 +102,17 @@ def existing_keys():
     return titles, dois, ids
 
 
+def preprint_ids():
+    """OpenAlex IDs of entries that are still listed as preprints."""
+    text = PUBS_FILE.read_text() if PUBS_FILE.exists() else ""
+    found = set()
+    for block in re.split(r"\n(?=- title:)", text):
+        oid = re.search(r'^\s*openalex:\s*"?(W\d+)"?\s*$', block, re.M)
+        if oid and re.search(r"^\s*type:\s*preprint\s*$", block, re.M):
+            found.add(oid.group(1))
+    return found
+
+
 def ignored():
     if not IGNORE_FILE.exists():
         return set()
@@ -258,6 +269,7 @@ def main():
     args = ap.parse_args()
 
     titles, dois, ids = existing_keys()
+    still_preprint = preprint_ids()
     skip = ignored()
     works = fetch_works(args.since)
     scholar = [] if args.no_scholar else [r for r in fetch_scholar() if (r["year"] or 9999) >= args.since]
@@ -280,12 +292,24 @@ def main():
     for t, copies in groups.items():
         oids = {c["id"].rsplit("/", 1)[-1] for c in copies}
         cdois = {(c.get("doi") or "").replace("https://doi.org/", "").lower() for c in copies} - {""}
+        best = min(copies, key=rank)
+        best_doi = (best.get("doi") or "").replace("https://doi.org/", "").lower()
+        if (oids & still_preprint and best["type"] != "preprint" and best_doi and best_doi not in dois
+                and {best_doi, t} - skip == {best_doi, t}):
+            # OpenAlex merged a preprint you already list into its published version,
+            # sometimes under a new title. Add the published entry; the preprint entry
+            # with the same `openalex:` ID should then be removed by hand.
+            oid = (oids & still_preprint).pop()
+            note = (f"Published version of a preprint already listed (openalex: {oid}). "
+                    "Delete the old preprint entry, keeping its arXiv link here if you like.")
+            entries.append((best["publication_date"], "# " + note + "\n" + to_yaml(best)))
+            print(f"published version of an existing preprint: {best['title'][:80]}", file=sys.stderr)
+            continue
         if t in titles or oids & ids or cdois & dois or ({t} | {o.lower() for o in oids} | cdois) & skip:
             continue
         if t not in on_scholar and not any(key in inst for c in copies for inst in my_institutions(c) for key in AFFILIATIONS):
             print(f"skipped (no matching affiliation): {copies[0]['title'][:80]}", file=sys.stderr)
             continue
-        best = min(copies, key=rank)
         entries.append((best["publication_date"], to_yaml(best)))
     from_openalex = len(entries)
 
