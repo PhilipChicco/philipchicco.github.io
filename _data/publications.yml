@@ -19,6 +19,23 @@
 # To add new papers automatically: python3 scripts/sync_publications.py
 # (also runs monthly on GitHub, checks OpenAlex and Google Scholar, and opens a pull request for you to review).
 
+- title: "Clinical readiness of foundation and agentic AI in computational pathology"
+  authors: ["Qian Da", "Yijiang Chen", "Min Ju", "Zheyi Ji", "Albert Zhou", "Wenwen Wang", "Matthew A. Abikenari", "Philip Chikontwe", "Guillaume Larghero", "Bowen Chen", "Peter Neidlinger", "Dingrong Zhong", "Shuhao Wang", "Wei Xu", "Drew Williamson", "Germán Corredor", "Sen Yang", "Le Lu", "Xiao Han", "Kun-Hsing Yu", "Junzhou Huang", "Xiyue Wang", "Laura Barisoni", "Geert Litjens", "Anant Madabhushi", "Lifeng Zhu", "Chaofu Wang", "Junhan Zhao", "Weiguo Hu"]
+  venue: "Med"
+  venue_full: "Med (Cell Press)"
+  year: 2026
+  date: 2026-11-01
+  type: journal
+  doi: "10.1016/j.medj.2026.101333"
+  links:
+    paper: "https://doi.org/10.1016/j.medj.2026.101333"
+    arxiv: "https://arxiv.org/abs/2603.05884"
+  highlight: "Cell Press"
+  news: "International expert perspectives on the clinical readiness of foundation and agentic AI in computational pathology published in *Med* (Cell Press)."
+  selected: true
+  topics: [medical-imaging, vision-language]
+  openalex: W7134277491
+
 - title: "Biallelic loss of RB1 in hepatocellular carcinoma as synthetic lethal target for artificial intelligence-guided therapy"
   authors: ["Jihyun An", "Wonkyung Kim", "Xiumei Zhang", "Philip Chikontwe", "Jin‐Sung Ju", "Bora Oh", "Ji‐Hye Oh", "Eun Ju Yang", "Hyun Namgung", "Dakeun Lee", "Yue Pu", "Lijie Chen", "Sang Hyun Park", "Joong Sup Shim", "Chang Ohk Sung", "Ju Hyun Shim"]
   venue: "STTT"
@@ -49,21 +66,6 @@
   selected: false
   topics: []
   openalex: W7172379321
-
-- title: "Computational Pathology in the Era of Emerging Foundation and Agentic AI -- International Expert Perspectives on Clinical Integration and Translational Readiness"
-  authors: ["Qian Da", "Yijiang Chen", "Min Ho Ju", "Zheyi Ji", "Albert Zhou", "Wenwen Wang", "Matthew Alexander Abikenari", "Philip Chikontwe", "Guillaume Larghero", "Bowen Chen", "Peter Neidlinger", "Dingrong Zhong", "Shuhao Wang", "Wei Xu", "Drew Williamson", "Germán Corredor", "Sen Yang", "Le Lu", "Xiao Han", "Kun‐Hsing Yu", "Junzhou Huang", "Laura Barisoni", "Geert Litjens", "Anant Madabhushi", "Lifeng Zhu", "Chaofu Wang", "Junhan Zhao", "Weiguo Hu"]
-  venue: "arXiv"
-  venue_full: "arXiv preprint"
-  year: 2026
-  date: 2026-03-06
-  type: preprint
-  doi: "10.48550/arxiv.2603.05884"
-  links:
-    paper: "https://doi.org/10.48550/arxiv.2603.05884"
-  news: "New preprint on arXiv: international expert perspectives on computational pathology in the era of foundation and agentic AI."
-  selected: false
-  topics: [medical-imaging, vision-language]
-  openalex: W7134277491
 
 - title: "Subject-adaptive meta-learning for personalized BCI: A fusion of resting-state EEG signal and task-specific information"
   authors: ["Sion An", "Myeongkyun Kang", "Soopil Kim", "Philip Chikontwe", "Li Shen", "Sang Hyun Park"]

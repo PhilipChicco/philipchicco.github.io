@@ -49,7 +49,7 @@ title: Home
   </section>
 
   {%- assign highlights = site.data.publications | where_exp: "p", "p.highlight" -%}
-  {%- for h in highlights limit: 1 %}
+  {%- for h in highlights limit: 2 %}
   <section class="spotlight">
     <div class="spotlight-label">{% include icon.html name="star" %} Highlight · {{ h.highlight }}</div>
     <a class="spotlight-title" href="{{ h.links.paper }}" target="_blank" rel="noopener">{{ h.title }}</a>

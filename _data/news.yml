@@ -18,6 +18,11 @@
   text: "Serving as Associate Topic Editor, with Junhan Zhao, for the *Frontiers in Medicine* special issue “Multimodal, Foundation and Agent AI for Real-World Clinical Decision Support”. Submissions are open until January 22, 2027."
   link: https://www.frontiersin.org/research-topics/81403/multimodal-foundation-and-agent-ai-for-real-world-clinical-decision-support-patient-level-diagnosis-prognosis-and-treatment-selection
 
+- date: 2026-03-06
+  type: preprint
+  text: "New preprint on arXiv: international expert perspectives on computational pathology in the era of foundation and agentic AI."
+  link: https://arxiv.org/abs/2603.05884
+
 - date: 2024-07-01
   type: paper
   text: "[FR-MIL](https://doi.org/10.1109/tmi.2024.3446716) published in *IEEE Transactions on Medical Imaging*."
